@@ -493,7 +493,7 @@ export class SpeechService {
    * Evaluates incoming recognition transcripts for "Hey Drishti" wake phrases.
    * Protects against partial words (e.g. "दृष्टिहीन" meaning blind) to prevent false-triggers.
    */
-  private checkWakeMatch(transcript: string): { matched: boolean; remainingCommand: string } {
+  public checkWakeMatch(transcript: string): { matched: boolean; wakePhrase: string; remainingCommand: string } {
     const lower = transcript.toLowerCase().trim();
 
     // 1. Explicit multi-word wake phrases (highest confidence)
@@ -502,6 +502,12 @@ export class SpeechService {
       'hey dristi',
       'hey drishty',
       'hey drashti',
+      'hello drishti',
+      'hello dristi',
+      'hi drishti',
+      'hi dristi',
+      'ok drishti',
+      'okay drishti',
       'हे दृष्टि',
       'हे दृष्टी',
       'सुनो दृष्टि',
@@ -509,7 +515,9 @@ export class SpeechService {
       'ऐका दृष्टी',
       'ऐका दृष्टि',
       'हॅलो दृष्टी',
+      'हॅलो दृष्टि',
       'नमस्ते दृष्टि',
+      'नमस्ते दृष्टी',
     ];
 
     for (const phrase of phrasePatterns) {
@@ -517,7 +525,8 @@ export class SpeechService {
       if (idx !== -1) {
         return {
           matched: true,
-          remainingCommand: transcript.slice(idx + phrase.length).trim(),
+          wakePhrase: phrase,
+          remainingCommand: transcript.slice(idx + phrase.length).replace(/^[,\s]+/, '').trim(),
         };
       }
     }
@@ -527,7 +536,8 @@ export class SpeechService {
     if (englishWordMatch && englishWordMatch.index !== undefined) {
       return {
         matched: true,
-        remainingCommand: transcript.slice(englishWordMatch.index + englishWordMatch[0].length).trim(),
+        wakePhrase: englishWordMatch[0],
+        remainingCommand: transcript.slice(englishWordMatch.index + englishWordMatch[0].length).replace(/^[,\s]+/, '').trim(),
       };
     }
 
@@ -539,16 +549,19 @@ export class SpeechService {
       const matchPos = lower.indexOf(matchWord);
       return {
         matched: true,
-        remainingCommand: transcript.slice(matchPos + matchWord.length).trim(),
+        wakePhrase: matchWord,
+        remainingCommand: transcript.slice(matchPos + matchWord.length).replace(/^[,\s।,?!]+/, '').trim(),
       };
     }
 
-    return { matched: false, remainingCommand: '' };
+    return { matched: false, wakePhrase: '', remainingCommand: '' };
   }
 
   public startWakeWordListener(options: {
     language?: AppLanguage;
-    onWake: (remainingCommand: string, fullTranscript: string) => void;
+    onWake: (wakePhrase: string) => void;
+    onTranscript?: (transcript: string) => void;
+    onCommand: (command: string) => void;
     onError?: (err: any) => void;
   }): boolean {
     if (typeof window === 'undefined') return false;
@@ -556,7 +569,6 @@ export class SpeechService {
     const SpeechRec = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
     if (!SpeechRec) return false;
 
-    this.onWakeWordDetectedCallback = options.onWake;
     this.wakeLanguage = options.language || 'en';
     this.isWakeListening = true;
 
@@ -572,24 +584,76 @@ export class SpeechService {
       recognition.continuous = true;
       recognition.maxAlternatives = 1;
 
+      let isWakeActive = false;
+      let wakeSilenceTimer: any = null;
+      let pendingCommand = '';
+
       recognition.onresult = (event: any) => {
-        // Drop any microphone results if speech synthesis is playing to prevent acoustic feedback loop!
-        if (this.isListening || this.isSpeaking() || this.isActivelySpeaking) {
+        // Drop incoming microphone audio if Drishti is actively speaking to prevent acoustic feedback loop!
+        if (this.isSpeaking() || this.isActivelySpeaking) {
           return;
         }
 
-        for (let i = event.resultIndex; i < event.results.length; ++i) {
-          const transcript = event.results[i][0].transcript;
-          const matchResult = this.checkWakeMatch(transcript);
+        let fullTranscript = '';
+        let hasFinal = false;
 
-          if (matchResult.matched) {
-            console.log('[Drishti Wake] Wake word detected!', transcript);
-            // Wake word matched! Temporarily halt wake listening
-            this.temporarilySuspendWakeWord();
-            if (this.onWakeWordDetectedCallback) {
-              this.onWakeWordDetectedCallback(matchResult.remainingCommand, transcript);
+        for (let i = event.resultIndex; i < event.results.length; ++i) {
+          const item = event.results[i];
+          fullTranscript += item[0].transcript;
+          if (item.isFinal) {
+            hasFinal = true;
+          }
+        }
+
+        const matchResult = this.checkWakeMatch(fullTranscript);
+
+        // When wake phrase is detected for the first time
+        if (!isWakeActive && matchResult.matched) {
+          isWakeActive = true;
+          console.log('[Drishti Wake] Auto-woke up on phrase:', matchResult.wakePhrase);
+          this.playTone('listen_start');
+          options.onWake(matchResult.wakePhrase);
+        }
+
+        if (isWakeActive) {
+          const commandPart = matchResult.remainingCommand || '';
+          pendingCommand = commandPart;
+
+          if (commandPart.length > 0) {
+            options.onTranscript?.(commandPart);
+          }
+
+          clearTimeout(wakeSilenceTimer);
+
+          if (hasFinal) {
+            if (pendingCommand.trim().length > 0) {
+              const cmdToDeliver = pendingCommand.trim();
+              isWakeActive = false;
+              pendingCommand = '';
+              options.onCommand(cmdToDeliver);
+            } else {
+              // User said just the wake phrase and stopped — give them a brief window to speak command
+              wakeSilenceTimer = setTimeout(() => {
+                if (isWakeActive) {
+                  isWakeActive = false;
+                  const finalCmd = pendingCommand.trim();
+                  pendingCommand = '';
+                  options.onCommand(finalCmd);
+                }
+              }, 2200);
             }
-            break;
+          } else {
+            // Interim result: If user has spoken a substantial command and paused for 1.4 seconds, deliver it!
+            if (pendingCommand.trim().length > 2) {
+              wakeSilenceTimer = setTimeout(() => {
+                if (isWakeActive && pendingCommand.trim().length > 2) {
+                  const cmdToDeliver = pendingCommand.trim();
+                  isWakeActive = false;
+                  pendingCommand = '';
+                  options.onCommand(cmdToDeliver);
+                }
+              }, 1400);
+            }
           }
         }
       };
@@ -604,28 +668,31 @@ export class SpeechService {
       };
 
       recognition.onend = () => {
-        // Auto-restart wake listener if user enabled it and we're not speaking/listening
-        if (this.isWakeListening && !this.isListening && !this.isSpeaking() && !this.isActivelySpeaking) {
+        isWakeActive = false;
+        pendingCommand = '';
+        clearTimeout(wakeSilenceTimer);
+
+        // Auto-restart wake listener if user enabled it and we're not speaking
+        if (this.isWakeListening && !this.isSpeaking() && !this.isActivelySpeaking) {
           clearTimeout(this.wakeRestartTimer);
           this.wakeRestartTimer = setTimeout(() => {
-            if (this.isWakeListening && !this.isListening && !this.isSpeaking() && !this.isActivelySpeaking) {
+            if (this.isWakeListening && !this.isSpeaking() && !this.isActivelySpeaking) {
               try {
                 this.wakeRecognition?.start();
-                console.log('[Drishti Wake] Auto-restarted wake listener');
+                console.log('[Drishti Wake] Auto-restarted continuous wake listener');
               } catch (restartErr) {
-                // Recognition may already be started or in a bad state — recreate after a delay
                 console.warn('[Drishti Wake] Restart failed, will retry:', restartErr);
                 clearTimeout(this.wakeRestartTimer);
                 this.wakeRestartTimer = setTimeout(() => {
-                  if (this.isWakeListening && !this.isListening && !this.isSpeaking()) {
+                  if (this.isWakeListening && !this.isSpeaking()) {
                     try {
                       this.wakeRecognition?.start();
                     } catch (_) {}
                   }
-                }, 1500);
+                }, 1200);
               }
             }
-          }, 600);
+          }, 300);
         }
       };
 

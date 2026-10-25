@@ -196,54 +196,51 @@ export default function App() {
   const [autoReadSchemes, setAutoReadSchemes] = useState(false);
   const [isWakeWordActive, setIsWakeWordActive] = useState(false);
 
-  // Background Wake Word ("Hey Drishti") Listener
+  // Background Wake Word ("Hey Drishti") Listener with Continuous Command Listening
   useEffect(() => {
-    if (!accessibilitySettings.voiceWakeEnabled) {
+    if (!accessibilitySettings.voiceWakeEnabled || currentRoute === 'companion') {
       speechService.stopWakeWordListener(true);
       setIsWakeWordActive(false);
       return;
     }
 
-    // Do not run background wake listening when actively speaking, processing, or in companion mode
-    if (coreState !== 'IDLE' || currentRoute === 'companion') {
-      speechService.stopWakeWordListener(false);
-      return;
-    }
-
     const started = speechService.startWakeWordListener({
       language,
-      onWake: (remainingCommand) => {
+      onWake: (_wakePhrase) => {
         setIsWakeWordActive(true);
         if (!speechService.getIsAudioUnlocked()) {
           setNeedsAudioUnlock(true);
         }
-        speechService.playTone('listen_start');
-
-        const cleanCommand = remainingCommand.trim();
-        // If a command was attached directly (e.g. "Hey Drishti tell me government scheme")
-        if (cleanCommand.length > 2) {
-          handleVoiceRouting(cleanCommand);
-        } else {
-          // Only wake phrase was spoken ("Hey Drishti") -> wake up listening trigger!
+        setCoreState('LISTENING');
+        setActiveTranscript(
+          language === 'hi'
+            ? 'सुन रही हूँ... कहिए क्या आदेश है?'
+            : language === 'mr'
+            ? 'ऐकत आहे... सांगा काय आदेश आहे?'
+            : 'Listening... speak your command'
+        );
+      },
+      onTranscript: (liveTranscript) => {
+        setActiveTranscript(liveTranscript);
+      },
+      onCommand: (command) => {
+        const clean = command.trim();
+        if (!clean) {
           setCoreState('SPEAKING');
-          const wakeAck =
+          const promptMsg =
             language === 'hi'
-              ? 'हाँ, मैं सुन रही हूँ।'
+              ? 'हाँ, मैं सुन रही हूँ। कहिए क्या सहायता करूँ?'
               : language === 'mr'
-              ? 'हो, मी ऐकत आहे.'
-              : 'Yes, I am listening.';
-
-          setActiveTranscript(wakeAck);
-          speechService.speak(wakeAck, {
+              ? 'हो, मी ऐकत आहे. सांगा मी कशी मदत करू?'
+              : 'Yes, I am listening. What can I help you with?';
+          setActiveTranscript(promptMsg);
+          speechService.speak(promptMsg, {
             language,
-            onEnd: () => {
-              // Open listening trigger to receive the subsequent voice command!
-              handleGlobalVoiceCore();
-            },
-            onError: () => {
-              handleGlobalVoiceCore();
-            },
+            onEnd: () => setCoreState('IDLE'),
+            onError: () => setCoreState('IDLE'),
           });
+        } else {
+          handleVoiceRouting(clean);
         }
       },
       onError: () => {
@@ -256,44 +253,42 @@ export default function App() {
     return () => {
       speechService.stopWakeWordListener(false);
     };
-  }, [accessibilitySettings.voiceWakeEnabled, coreState, currentRoute, language]);
+  }, [accessibilitySettings.voiceWakeEnabled, currentRoute, language]);
 
-  // Ensure first click on page initializes wake listener if browser policy requires a gesture
+  // Ensure first click on page unlocks audio and initializes wake listener
   useEffect(() => {
     const handleFirstGesture = () => {
-      if (accessibilitySettings.voiceWakeEnabled && !isWakeWordActive && coreState === 'IDLE') {
+      speechService.unlockAudio();
+      setNeedsAudioUnlock(false);
+      if (accessibilitySettings.voiceWakeEnabled && !isWakeWordActive && currentRoute !== 'companion') {
         const started = speechService.startWakeWordListener({
           language,
-          onWake: (remainingCommand) => {
+          onWake: () => {
             setIsWakeWordActive(true);
-            speechService.playTone('listen_start');
-            const cleanCommand = remainingCommand.trim();
-            if (cleanCommand.length > 2) {
-              handleVoiceRouting(cleanCommand);
-            } else {
-              setCoreState('SPEAKING');
-              const wakeAck =
-                language === 'hi'
-                  ? 'हाँ, मैं सुन रही हूँ।'
-                  : language === 'mr'
-                  ? 'हो, मी ऐकत आहे.'
-                  : 'Yes, I am listening.';
-              setActiveTranscript(wakeAck);
-              speechService.speak(wakeAck, {
-                language,
-                onEnd: () => handleGlobalVoiceCore(),
-                onError: () => handleGlobalVoiceCore(),
-              });
+            setCoreState('LISTENING');
+            setActiveTranscript(
+              language === 'hi'
+                ? 'सुन रही हूँ... कहिए क्या आदेश है?'
+                : language === 'mr'
+                ? 'ऐकत आहे... सांगा काय आदेश आहे?'
+                : 'Listening... speak your command'
+            );
+          },
+          onTranscript: (liveTranscript) => {
+            setActiveTranscript(liveTranscript);
+          },
+          onCommand: (command) => {
+            const clean = command.trim();
+            if (clean) {
+              handleVoiceRouting(clean);
             }
           },
         });
         if (started) {
           setIsWakeWordActive(true);
-          // Successfully started — remove listener
           window.removeEventListener('click', handleFirstGesture);
           window.removeEventListener('touchstart', handleFirstGesture);
         }
-        // If not started (e.g., still speaking), keep the listener active to retry on next gesture
       }
     };
     window.addEventListener('click', handleFirstGesture, { passive: true });
@@ -302,7 +297,7 @@ export default function App() {
       window.removeEventListener('click', handleFirstGesture);
       window.removeEventListener('touchstart', handleFirstGesture);
     };
-  }, [accessibilitySettings.voiceWakeEnabled, isWakeWordActive, coreState, language]);
+  }, [accessibilitySettings.voiceWakeEnabled, isWakeWordActive, currentRoute, language]);
 
   // Toggle Wake Word mode
   const handleToggleWakeWord = () => {
