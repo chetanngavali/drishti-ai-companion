@@ -39,6 +39,7 @@ export default function App() {
   const [coreState, setCoreState] = useState<CoreState>('IDLE');
   const [activeTranscript, setActiveTranscript] = useState('');
   const [activeAlarmReminder, setActiveAlarmReminder] = useState<MedicalReminder | null>(null);
+  const [needsAudioUnlock, setNeedsAudioUnlock] = useState(false);
 
   // App Language
   const [language, setLanguage] = useState<AppLanguage>(() => {
@@ -117,6 +118,7 @@ export default function App() {
   useEffect(() => {
     const unlock = () => {
       speechService.unlockAudio();
+      setNeedsAudioUnlock(false);
     };
     window.addEventListener('click', unlock, { passive: true });
     window.addEventListener('touchstart', unlock, { passive: true });
@@ -212,6 +214,9 @@ export default function App() {
       language,
       onWake: (remainingCommand) => {
         setIsWakeWordActive(true);
+        if (!speechService.getIsAudioUnlocked()) {
+          setNeedsAudioUnlock(true);
+        }
         speechService.playTone('listen_start');
 
         const cleanCommand = remainingCommand.trim();
@@ -626,6 +631,36 @@ export default function App() {
       >
         Skip to main content
       </a>
+
+      {/* Audio Autoplay Policy Unlock Banner */}
+      {needsAudioUnlock && (
+        <button
+          onClick={() => {
+            speechService.unlockAudio();
+            setNeedsAudioUnlock(false);
+            speechService.playTone('success');
+            const welcomeMsg =
+              language === 'hi'
+                ? 'दृष्टि ऑडियो सक्रिय हो गया है।'
+                : language === 'mr'
+                ? 'दृष्टी ऑडिओ सक्रिय झाला आहे.'
+                : 'Drishti voice and audio enabled.';
+            speechService.speak(welcomeMsg, { language });
+          }}
+          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 px-4 text-center flex items-center justify-center gap-2 shadow-lg transition-all cursor-pointer animate-pulse z-50 sticky top-0"
+          role="alert"
+          aria-live="assertive"
+        >
+          <span className="text-xl">🔊</span>
+          <span className="text-sm sm:text-base font-extrabold underline decoration-white/60">
+            {language === 'hi'
+              ? 'आवाज सुनने के लिए यहाँ स्क्रीन पर एक बार टैप करें'
+              : language === 'mr'
+              ? 'आवाज ऐकण्यासाठी स्क्रीनवर एकदा टॅप करा'
+              : 'Tap anywhere on screen to enable voice output & sound'}
+          </span>
+        </button>
+      )}
 
       {/* Top Header */}
       <DrishtiHeader

@@ -45,6 +45,15 @@ export class SpeechService {
 
   // Unlock browser audio context and speech synthesis on user interaction
   public unlockAudio(): void {
+    this.isAudioUnlocked = true;
+    if (!this.audioContext) {
+      const AudioCtx = window.AudioContext || (window as any).webkitAudioContext;
+      if (AudioCtx) {
+        try {
+          this.audioContext = new AudioCtx();
+        } catch (_) {}
+      }
+    }
     if (this.audioContext && this.audioContext.state === 'suspended') {
       this.audioContext.resume().catch(() => {});
     }
@@ -55,23 +64,28 @@ export class SpeechService {
         } catch (_) {}
       }
       this.updateVoices();
-      if (!this.isAudioUnlocked) {
-        this.isAudioUnlocked = true;
-        try {
-          const primer = new SpeechSynthesisUtterance(' ');
-          primer.volume = 0.001;
-          this.synth.speak(primer);
-        } catch (_) {}
-      }
+      try {
+        const primer = new SpeechSynthesisUtterance(' ');
+        primer.volume = 0.001;
+        this.synth.speak(primer);
+      } catch (_) {}
     }
+  }
+
+  public getIsAudioUnlocked(): boolean {
+    return this.isAudioUnlocked;
   }
 
   private getAudioContext(): AudioContext | null {
     if (typeof window === 'undefined') return null;
+    // Do not initialize AudioContext before user interaction to prevent browser autoplay warnings
+    if (!this.isAudioUnlocked) return null;
     if (!this.audioContext) {
       const AudioCtx = window.AudioContext || (window as any).webkitAudioContext;
       if (AudioCtx) {
-        this.audioContext = new AudioCtx();
+        try {
+          this.audioContext = new AudioCtx();
+        } catch (_) {}
       }
     }
     if (this.audioContext && this.audioContext.state === 'suspended') {
@@ -84,7 +98,7 @@ export class SpeechService {
   public playTone(type: 'listen_start' | 'listen_stop' | 'success' | 'alert' | 'processing' | 'error') {
     try {
       const ctx = this.getAudioContext();
-      if (!ctx) return;
+      if (!ctx || ctx.state === 'suspended') return;
 
       const now = ctx.currentTime;
       const osc = ctx.createOscillator();
@@ -367,7 +381,14 @@ export class SpeechService {
       };
 
       utterance.onerror = (e: any) => {
-        console.warn(`Speech chunk ${currentIndex} notification:`, e?.error);
+        if (e?.error === 'not-allowed') {
+          console.warn('[Drishti Speech] Audio output was not permitted by browser autoplay policy. Tap screen once to enable audio.');
+          this.isAudioUnlocked = false;
+          options?.onError?.('not-allowed');
+        } else {
+          console.warn(`Speech chunk ${currentIndex} notification:`, e?.error);
+          options?.onError?.(e?.error);
+        }
         if (this.currentSessionId !== sessionId) return;
         advance();
       };
