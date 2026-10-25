@@ -1,0 +1,828 @@
+<resources>
+    <string name="app_name">DrishtiAI</string>
+
+    <!-- Splash / Loading Screen -->
+    <string name="splash_tagline">Your Intelligent Companion\nfor a More Independent Life</string>
+    <string name="splash_desc">Designed to assist with mobility, navigation and environmental awareness. Always use your own judgment and follow local safety guidance.</string>
+    <string name="splash_initializing">Initializing DrishtiAI…</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_select_badge">LANGUAGE PREFERENCE</string>
+    <string name="language_select_title">Choose Your Language</string>
+    <string name="language_select_subtitle">Select your preferred language for app interface, voice guidance, and spoken assistance.</string>
+    <string name="language_select_continue">Continue in %1$s →</string>
+    <string name="language_english_label">English</string>
+    <string name="language_english_native">English</string>
+    <string name="language_hindi_label">Hindi</string>
+    <string name="language_hindi_native">हिन्दी</string>
+    <string name="language_marathi_label">Marathi</string>
+    <string name="language_marathi_native">मराठी</string>
+
+    <!-- First-Run Safety Notice -->
+    <string name="first_run_title">Before you continue</string>
+    <string name="first_run_subtitle">Safety &amp; Assistive-Use Notice</string>
+    <string name="first_run_point_1">DrishtiAI provides assistance, not guaranteed safety.</string>
+    <string name="first_run_point_2">Camera and AI results may be incorrect or delayed.</string>
+    <string name="first_run_point_3">GPS may be inaccurate or unavailable indoors and in urban areas.</string>
+    <string name="first_run_point_4">Voice recognition may misunderstand commands in noisy environments.</string>
+    <string name="first_run_point_5">Network and cloud services may become unavailable.</string>
+    <string name="first_run_point_6">Do not rely exclusively on the application during emergencies.</string>
+    <string name="first_run_point_7">Contact appropriate emergency services (112) when required.</string>
+    <string name="btn_understand_continue">I Understand &amp; Continue</string>
+    <string name="btn_read_safety_info">Read Full Safety Information</string>
+
+    <!-- Navigation Bar & Top Bar -->
+    <string name="nav_home">Home</string>
+    <string name="nav_scan">Scan</string>
+    <string name="nav_navigate">Navigate</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_describe">Describe</string>
+    <string name="nav_nearby">Nearby</string>
+    <string name="nav_emergency">Emergency</string>
+    <string name="nav_sos_btn">SOS</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_subtitle">Personalize your DrishtiAI experience</string>
+
+    <!-- Sections -->
+    <string name="section_account">Account</string>
+    <string name="section_voice_language">Voice &amp; Language</string>
+    <string name="section_accessibility">Accessibility</string>
+    <string name="section_guardian_family">Guardian &amp; Family</string>
+    <string name="section_safety_privacy_info">Safety, Privacy &amp; Information</string>
+    <string name="section_support_reporting">Support &amp; Reporting</string>
+    <string name="section_about">About</string>
+    <string name="section_hardware_optional">Optional Hardware Integration</string>
+
+    <!-- Account Section -->
+    <string name="account_profile">Profile</string>
+    <string name="account_security">Account &amp; Security</string>
+    <string name="account_role_embedded">EMBEDDED USER</string>
+    <string name="account_role_parent">GUARDIAN / PARENT</string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="dialog_sign_out_title">Sign Out</string>
+    <string name="dialog_sign_out_msg">Are you sure you want to sign out from your DrishtiAI account?</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_delete">Delete</string>
+
+    <!-- Voice & Language Section -->
+    <string name="app_language_title">App Language</string>
+    <string name="app_language_desc">Select display language for app interface</string>
+    <string name="voice_language_title">Voice Language</string>
+    <string name="voice_language_desc">Select language for speech recognition and audio guidance</string>
+    <string name="lang_auto_detect">Auto Detect</string>
+    <string name="lang_english">English</string>
+    <string name="lang_hindi">हिन्दी</string>
+    <string name="lang_marathi">मराठी</string>
+    <string name="voice_speed_title">Voice Speed</string>
+    <string name="voice_volume_title">Voice Volume</string>
+    <string name="voice_commands_title">Voice Commands</string>
+    <string name="voice_commands_desc">Review supported voice navigation and query phrases</string>
+    <string name="speech_settings_title">Speech Settings</string>
+    <string name="voice_wake_title">Voice Wake Service</string>
+    <string name="voice_wake_desc">Listen for \'Hello Drishti\' wake phrase</string>
+
+    <!-- Accessibility Section -->
+    <string name="accessibility_preferences_title">Accessibility Preferences</string>
+    <string name="large_text_title">Large Text</string>
+    <string name="large_text_desc">Increase font sizes for improved readability</string>
+    <string name="high_contrast_title">High Contrast</string>
+    <string name="high_contrast_desc">High contrast color palette for visual impairment</string>
+    <string name="talkback_support_title">TalkBack Optimization</string>
+    <string name="talkback_support_desc">Enriched accessibility descriptions and role markers</string>
+    <string name="haptic_touch_title">Haptic Feedback on Touch</string>
+    <string name="haptic_nav_title">Haptic Turn Navigation</string>
+    <string name="haptic_safety_title">Haptic Hazard &amp; Drop-off Warnings</string>
+    <string name="reset_settings_title">Reset Preferences</string>
+    <string name="reset_settings_desc">Restore all speech, accessibility, and hardware preferences to default values</string>
+    <string name="reset_settings_dialog_title">Reset Preferences to Default?</string>
+    <string name="reset_settings_dialog_msg">This will restore voice speed, speech volume, accessibility switches, haptic settings, and hardware distance thresholds to their original defaults. Your account login and guardian connections will not be affected.</string>
+    <string name="btn_reset_defaults">Reset to Defaults</string>
+    <string name="btn_reset_settings">Reset Settings</string>
+    <string name="reset_settings_success">Preferences have been reset to default values.</string>
+    <string name="btn_open_system_settings">Open Android App Settings</string>
+
+    <!-- Guardian & Family Section -->
+    <string name="guardian_pairing_title">Guardian Pairing</string>
+    <string name="guardian_pairing_desc">Secure Parent / Guardian device pairing</string>
+    <string name="guardian_consent_notice">Guardian access is not automatic. A connection requires the appropriate account relationship and approval.</string>
+    <string name="guardian_consent_sub">Your guardian connection is created only through the pairing and approval process.</string>
+    <string name="guardian_btn_generate">Generate 6-Digit Pairing Code</string>
+    <string name="guardian_btn_regenerate">Regenerate Code</string>
+    <string name="guardian_code_active">ACTIVE PAIRING CODE</string>
+    <string name="guardian_code_expiry">Expires in 15 minutes • Single-use only</string>
+    <string name="guardian_pending_requests">Pending Link Requests</string>
+    <string name="guardian_approved_guardians">Approved Guardians</string>
+    <string name="guardian_no_linked">No guardians currently linked.</string>
+    <string name="guardian_btn_approve">Approve</string>
+    <string name="guardian_btn_decline">Decline</string>
+    <string name="guardian_btn_revoke">Revoke Access</string>
+    <string name="guardian_connection_status">Connection Status</string>
+    <string name="guardian_status_active">Active &amp; Approved</string>
+    <string name="guardian_status_pending">Pending User Approval</string>
+
+    <!-- Safety, Privacy & Information Section -->
+    <string name="item_safety_notice_title">Safety &amp; Assistive-Use Notice</string>
+    <string name="item_safety_notice_sub">Environmental limitations, sensor errors, and personal safety caveats</string>
+    <string name="item_privacy_policy_title">Privacy &amp; Data Processing</string>
+    <string name="item_privacy_policy_sub">Privacy notice, data inventory, and local-first sensor processing</string>
+    <string name="item_permission_center_title">Permission Center</string>
+    <string name="item_permission_center_sub">Transparent rationale for Camera, Microphone, Location, and Bluetooth</string>
+    <string name="item_emergency_sos_title">Emergency &amp; SOS Information</string>
+    <string name="item_emergency_sos_sub">Guardian alerting limitations, GPS conditions, and direct 112 access</string>
+    <string name="item_ai_transparency_title">AI Transparency</string>
+    <string name="item_ai_transparency_sub">Neural false positives, perception caveats, and model disclosures</string>
+    <string name="item_security_center_title">Security Center</string>
+    <string name="item_security_center_sub">Evidence-based verification, RLS isolation, and vulnerability reporting</string>
+    <string name="item_terms_of_use_title">Terms of Use</string>
+    <string name="item_terms_of_use_sub">Versioned terms, liability limitations, and emergency service constraints</string>
+    <string name="item_accessibility_notice_title">Accessibility Notice</string>
+    <string name="item_accessibility_notice_sub">TalkBack semantics, haptic waveforms, and multilingual voice</string>
+
+    <!-- Support & Reporting Section -->
+    <string name="item_report_incident_title">Report an Incident</string>
+    <string name="item_report_incident_sub">Submit technical feedback on obstacle detection, navigation, or voice</string>
+    <string name="item_security_report_title">Security / Vulnerability Reporting</string>
+    <string name="item_security_report_sub">Confidential security report directly to the engineering team</string>
+
+    <!-- About Section -->
+    <string name="about_drishti_title">DrishtiAI</string>
+    <string name="about_tagline">AI-Assisted Mobility &amp; Safety Companion</string>
+    <string name="about_version_label">Version</string>
+    <string name="about_version_value">2.0 Stable (Build 2026)</string>
+    <string name="about_opensource_title">Open-Source &amp; Third-Party Notices</string>
+    <string name="about_opensource_sub">TensorFlow Lite, MobileNet, Supabase, Google Maps &amp; Places SDKs</string>
+
+    <!-- Hardware / Cane Section (Optional) -->
+    <string name="hardware_optional_title">Smart Cane (Optional / Future Hardware)</string>
+    <string name="hardware_optional_desc">Optional ESP32 Time-of-Flight cane integration (experimental accessory)</string>
+    <string name="hardware_optional_note">Note: DrishtiAI is designed to operate completely on your smartphone. Smart Cane hardware is an optional accessory for future extended sensor range.</string>
+
+    <!-- Safety Notice Detailed Screen -->
+    <string name="safety_screen_header">Important Safety Information</string>
+    <string name="safety_screen_sub">Mandatory assistive guidance disclaimer and limitations</string>
+    <string name="safety_core_statement">DrishtiAI provides AI-assisted environmental perception, navigation, and voice assistance. Detection and navigation may be affected by lighting, weather, camera limitations, sensor errors, connectivity, GPS accuracy, or environmental conditions.</string>
+    <string name="safety_caveat_lighting_title">Lighting &amp; Weather</string>
+    <string name="safety_caveat_lighting_desc">Low light, direct sunlight glare, heavy rain, or fog can degrade camera object and hazard detection.</string>
+    <string name="safety_caveat_gps_title">GPS &amp; Turn Guidance</string>
+    <string name="safety_caveat_gps_desc">Urban canyons and covered structures can degrade GPS precision. Clock directions are advisory.</string>
+    <string name="safety_caveat_ai_title">AI False Positives &amp; Misses</string>
+    <string name="safety_caveat_ai_desc">Computer vision models can produce false positives or miss fast-moving objects. Never rely solely on AI for street crossing.</string>
+    <string name="safety_caveat_network_title">Connectivity &amp; Cloud</string>
+    <string name="safety_caveat_network_desc">Cloud services may be unavailable in low network areas. On-device vision continues locally.</string>
+    <string name="safety_caveat_hardware_title">Optional Smart Cane Accessory</string>
+    <string name="safety_caveat_hardware_desc">External sensors are optional accessories. Ultrasonic and ToF readings can be affected by soft or angled surfaces.</string>
+    <string name="safety_footer_reminder">Always use appropriate personal safety practices, a traditional white cane where recommended, and independent awareness when travelling.</string>
+
+    <!-- Privacy & Data Policy Screen -->
+    <string name="privacy_banner_title">Privacy &amp; Data Processing Notice</string>
+    <string name="privacy_banner_desc">This notice explains how DrishtiAI handles personal data and is designed with applicable Indian privacy requirements in mind.</string>
+    <string name="privacy_local_first_title">Local-First Sensor Processing</string>
+    <string name="privacy_local_first_desc">Camera frames and microphone audio for obstacle detection and voice commands are processed 100% on your device. Camera video frames are never stored, transmitted, or uploaded to any server.</string>
+    <string name="privacy_data_inventory_title">Data Processing Inventory</string>
+    <string name="privacy_rights_title">User Rights &amp; Data Control</string>
+    <string name="privacy_right_access">Right to Access: View profile data, linked guardians, and saved settings anytime.</string>
+    <string name="privacy_right_correction">Right to Correction: Update emergency contacts and preferences in Settings.</string>
+    <string name="privacy_right_revocation">Right to Revoke: Immediately revoke any linked guardian connection with one tap.</string>
+    <string name="privacy_right_erasure">Right to Erasure: Request permanent deletion of your account and related records.</string>
+    <string name="btn_delete_account_data">Request Account &amp; Data Deletion</string>
+
+    <!-- Permission Center Screen -->
+    <string name="permission_center_desc">DrishtiAI requires hardware permissions to provide assistive mobility. We practice data minimization: sensors are active only during your active sessions.</string>
+    <string name="perm_camera_title">Camera Permission</string>
+    <string name="perm_camera_purpose">Used for real-time obstacle detection, hazard warnings, drop-off detection, and text recognition. Frames are processed in memory and never stored or uploaded.</string>
+    <string name="perm_mic_title">Microphone Permission</string>
+    <string name="perm_mic_purpose">Used for voice navigation commands and offline wake phrase detection. Audio is not recorded or stored remotely.</string>
+    <string name="perm_location_title">Location Permission</string>
+    <string name="perm_location_purpose">Used for pedestrian walking directions, nearby place discovery, and sharing emergency coordinates with your approved guardians during SOS.</string>
+    <string name="perm_bluetooth_title">Bluetooth Permission (Optional)</string>
+    <string name="perm_bluetooth_purpose">Used optionally to connect to external smart cane accessories. Not required for core phone navigation.</string>
+    <string name="perm_granted">Granted</string>
+    <string name="perm_not_granted">Not Granted</string>
+    <string name="btn_grant_permission">Grant Permission</string>
+
+    <!-- Terms of Use Screen -->
+    <string name="terms_banner_title">Terms of Use (Version 2.0-2026)</string>
+    <string name="terms_banner_desc">Please read these Terms carefully before using DrishtiAI. By using this application, you acknowledge and agree to these terms.</string>
+    <string name="terms_sec1_title">1. Assistive Purpose &amp; Limitation of Liability</string>
+    <string name="terms_sec1_desc">DrishtiAI is an assistive technology aid. It does not replace personal judgment, traditional mobility training, or a standard white cane. The developers and contributors are not liable for navigation errors, accidents, or third-party service interruptions.</string>
+    <string name="terms_sec2_title">2. Emergency &amp; SOS Limitations</string>
+    <string name="terms_sec2_desc">Emergency SOS alerts depend on cellular reception, battery levels, and guardian device availability. In immediate danger, call national emergency services (112) directly.</string>
+    <string name="terms_sec3_title">3. Guardian Relationship &amp; Consent</string>
+    <string name="terms_sec3_desc">Guardian links require mutual agreement via pairing codes. You may revoke guardian access at any time through Settings.</string>
+
+    <!-- Emergency SOS Notice Screen -->
+    <string name="emergency_screen_title">Emergency SOS Information</string>
+    <string name="emergency_banner_title">Important SOS Capabilities &amp; Limitations</string>
+    <string name="emergency_point_1">SOS alerts your configured emergency contacts and approved guardians with your current GPS location.</string>
+    <string name="emergency_point_2">SMS and network delivery depend on cellular signal, carrier availability, and battery level.</string>
+    <string name="emergency_point_3">DrishtiAI is NOT a replacement for national emergency dispatch. Always call 112 directly in life-threatening situations.</string>
+    <string name="btn_call_112">Call National Emergency (112)</string>
+    <string name="btn_configure_contacts">Configure Emergency Contacts</string>
+
+    <!-- Security Center Screen -->
+    <string name="security_banner_title">Evidence-Based Security Architecture</string>
+    <string name="security_banner_desc">DrishtiAI is built with defense-in-depth principles: Row Level Security (RLS) on all database tables, encrypted tokens in Android EncryptedSharedPreferences, and zero server storage of visual frames.</string>
+    <string name="security_feature_rls_title">Database Row Level Security</string>
+    <string name="security_feature_rls_desc">All queries are strictly partitioned by authenticated user UUID. Users cannot read or modify data belonging to other accounts.</string>
+    <string name="security_feature_auth_title">Secure Authentication &amp; Pairing</string>
+    <string name="security_feature_auth_desc">Guardian pairing codes are 6-digit cryptographic tokens that expire in 15 minutes, with rate-limiting and brute-force protection.</string>
+    <string name="security_feature_local_title">Local-First Sensor Confidentiality</string>
+    <string name="security_feature_local_desc">Computer vision inference runs on-device using quantized TFLite models. No camera frames ever leave your device.</string>
+
+    <!-- AI Transparency Screen -->
+    <string name="ai_transparency_header">Assistive AI System Disclosures</string>
+    <string name="ai_transparency_desc">DrishtiAI combines on-device machine vision and offline speech interpretation. Because this system guides mobility in the physical world, its limitations must be transparently understood.</string>
+    <string name="ai_limitations_title">Known AI &amp; Perception Limitations</string>
+    <string name="ai_lim_false_positives">False Positives: Neural networks can misclassify floor patterns, shadows, or street grates as obstacles.</string>
+    <string name="ai_lim_missed_detections">Missed Detections: Transparent glass doors, thin hanging wires, or fast-moving obstacles may occasionally be missed.</string>
+    <string name="ai_lim_lighting">Lighting: Pitch darkness or severe glare degrades optical detection.</string>
+    <string name="ai_lim_voice">Voice: Heavy ambient traffic noise or regional dialects may require repeating commands.</string>
+
+    <!-- Incident & Vulnerability Reporting Screen -->
+    <string name="incident_screen_title">Report an Incident or Vulnerability</string>
+    <string name="incident_type_standard">Standard Incident Report</string>
+    <string name="incident_type_vulnerability">Security Vulnerability Report</string>
+    <string name="incident_category_label">Incident Category</string>
+    <string name="incident_desc_label">Description of what happened</string>
+    <string name="incident_desc_hint">Please provide details about the location, environment, or steps to reproduce…</string>
+    <string name="incident_include_logs">Include anonymous diagnostic metadata (device model, OS version)</string>
+    <string name="btn_submit_report">Submit Report</string>
+    <string name="report_submitted_success">Report submitted successfully. Thank you for helping keep DrishtiAI safe and reliable.</string>
+
+    <!-- Accessibility Notice Screen -->
+    <string name="accessibility_screen_header">Accessibility Information &amp; Standards</string>
+    <string name="accessibility_screen_desc">DrishtiAI is designed with reference to the Rights of Persons with Disabilities (RPwD) Act, 2016 and WCAG 2.1 AA accessibility guidelines.</string>
+    <string name="acc_feature_talkback">Full TalkBack compatibility with descriptive labels and semantic headings.</string>
+    <string name="acc_feature_haptics">Distinct haptic vibration patterns for turns, hazard warnings, and confirmations.</string>
+    <string name="acc_feature_multilingual">Complete multilingual support in English, Hindi, and Marathi.</string>
+    <string name="acc_feature_touch">Large touch targets (minimum 48dp) and high-contrast color schemes.</string>
+
+    <!-- General Navigation & Accessibility -->
+    <string name="nav_back">Navigate back</string>
+    <string name="desc_important_warning">Important Warning</string>
+
+    <!-- Safety Notice Additions -->
+    <string name="safety_operational_caveats_title">Operational Caveats &amp; Limitations</string>
+
+    <!-- Privacy & Data Policy Additions -->
+    <string name="privacy_label_purpose">Purpose: %1$s</string>
+    <string name="privacy_processing_retention_format">Processing: %1$s • Retention: %2$s</string>
+    <string name="privacy_data_account_cat">Account Information (Name, Email)</string>
+    <string name="privacy_data_account_purpose">Authentication &amp; Profile management</string>
+    <string name="privacy_data_account_proc">Encrypted Supabase Auth</string>
+    <string name="privacy_data_account_ret">Account lifetime</string>
+    <string name="privacy_data_gps_cat">GPS Location</string>
+    <string name="privacy_data_gps_purpose">Pedestrian navigation &amp; Guardian SOS broadcast</string>
+    <string name="privacy_data_gps_proc">On-device + SOS stream</string>
+    <string name="privacy_data_gps_ret">Transient / Emergency session</string>
+    <string name="privacy_data_voice_cat">Voice Input Audio</string>
+    <string name="privacy_data_voice_purpose">Offline command recognition &amp; wake word</string>
+    <string name="privacy_data_voice_proc">100% On-device (Android Speech)</string>
+    <string name="privacy_data_voice_ret">Zero audio storage</string>
+    <string name="privacy_data_camera_cat">Camera Video Frames</string>
+    <string name="privacy_data_camera_purpose">Real-time obstacle &amp; drop-off detection</string>
+    <string name="privacy_data_camera_proc">100% On-device (TFLite / MobileNet)</string>
+    <string name="privacy_data_camera_ret">Zero frame recording</string>
+    <string name="privacy_data_cane_cat">Smart Cane Distance (Optional / Accessory)</string>
+    <string name="privacy_data_cane_purpose">Millimeter collision proximity warning</string>
+    <string name="privacy_data_cane_proc">ESP32 BLE UART -> Device</string>
+    <string name="privacy_data_cane_ret">Real-time cache only</string>
+    <string name="privacy_data_guardian_cat">Guardian Relationships</string>
+    <string name="privacy_data_guardian_purpose">Parent-child pairing &amp; emergency authorization</string>
+    <string name="privacy_data_guardian_proc">Supabase RLS tables</string>
+    <string name="privacy_data_guardian_ret">Active pairing duration</string>
+    <string name="privacy_data_telemetry_cat">Device Telemetry &amp; Battery</string>
+    <string name="privacy_data_telemetry_purpose">Hardware status &amp; emergency payload</string>
+    <string name="privacy_data_telemetry_proc">Local bridge + SOS session</string>
+    <string name="privacy_data_telemetry_ret">Session lifetime</string>
+    <string name="privacy_right_access_title">Access</string>
+    <string name="privacy_right_correction_title">Correction</string>
+    <string name="privacy_right_revocation_title">Revocation</string>
+    <string name="privacy_right_erasure_title">Erasure</string>
+    <string name="toast_export_data">Exporting local data summary to Downloads…</string>
+    <string name="btn_export_data">Export Data</string>
+    <string name="btn_delete_account">Delete Account</string>
+    <string name="toast_delete_submitted">Account deletion request submitted to Supabase Auth.</string>
+    <string name="btn_confirm_deletion">Confirm Deletion</string>
+
+    <!-- Permission Center Additions -->
+    <string name="perm_notif_title">Notifications</string>
+    <string name="perm_notif_purpose">Used for critical safety alerts, guardian pairing status updates, and emergency SOS broadcast acknowledgments.</string>
+    <string name="perm_optional">OPTIONAL</string>
+
+    <!-- Emergency SOS Additions -->
+    <string name="emergency_capabilities_title">Capabilities &amp; Limitations</string>
+    <string name="emergency_factor_guardian_title">Guardian Broadcast</string>
+    <string name="emergency_factor_network_title">Cellular &amp; Network</string>
+    <string name="emergency_factor_dispatch_title">Official Dispatch</string>
+    <string name="emergency_actions_title">Emergency Actions</string>
+    <string name="btn_test_sos_countdown">Test SOS &amp; 5s Countdown</string>
+
+    <!-- AI Transparency Additions -->
+    <string name="ai_lim_false_positives_title">False Positives</string>
+    <string name="ai_lim_missed_detections_title">Missed Detections</string>
+    <string name="ai_lim_lighting_title">Lighting &amp; Glare</string>
+    <string name="ai_lim_voice_title">Voice Interpretation</string>
+    <string name="ai_arch_title">Model &amp; Hardware Architecture</string>
+    <string name="ai_arch_vision_models_title">On-Device Mobile Vision Models:</string>
+    <string name="ai_arch_vision_models_desc">DrishtiAI utilizes quantized MobileNet and SSD neural models running locally via TensorFlow Lite on your smartphone processor. All inference takes place in volatile memory without cloud upload.</string>
+    <string name="ai_arch_cane_rule_title">Optional Future Cane Precedence Rule:</string>
+    <string name="ai_arch_cane_rule_desc">When an optional external Smart Cane accessory is connected, its direct physical millimeter reading takes precedence over camera optical estimates for proximate obstacles, immediately triggering tactile feedback.</string>
+
+    <!-- Security Center Additions -->
+    <string name="security_controls_title">Defense-in-Depth Controls</string>
+    <string name="security_feature_rls_item_title">PostgreSQL Row-Level Security (RLS)</string>
+    <string name="security_feature_auth_item_title">Cryptographic Pairing Handshake</string>
+    <string name="security_feature_local_item_title">On-Device Local Inference</string>
+    <string name="security_feature_tls_title">TLS 1.3 in Transit</string>
+    <string name="security_feature_tls_desc">End-to-end encryption for all authenticated API requests and database queries.</string>
+    <string name="security_feature_revocation_title">Unilateral Revocation</string>
+    <string name="security_feature_revocation_desc">Embedded user can revoke guardian link instantly with immediate effect.</string>
+    <string name="security_vuln_reporting_title">Vulnerability Reporting</string>
+
+    <!-- Terms of Use Additions -->
+    <string name="terms_accepted_on">Accepted on: %1$s</string>
+    <string name="toast_terms_acknowledged">Terms of Use acknowledged</string>
+    <string name="terms_agreement_checkbox">I have read, understood, and agree to these Terms of Use and assistive limitations.</string>
+
+    <!-- Accessibility Notice Additions -->
+    <string name="acc_assistive_tech_title">Built-in Assistive Technologies</string>
+    <string name="acc_feature_talkback_title">TalkBack &amp; Screen Reader Semantics</string>
+    <string name="acc_feature_haptics_title">Directional &amp; Warning Haptics</string>
+    <string name="acc_feature_multilingual_title">Multilingual Support</string>
+    <string name="acc_feature_touch_title">High Contrast &amp; Touch Target Standards</string>
+    <string name="copied_to_clipboard">Copied to clipboard</string>
+    <string name="home_try_saying">Try saying: \'%1$s\'</string>
+    <string name="home_try_saying_offline">Try saying: \'%1$s\' (Offline)</string>
+    <string name="home_no_voice_suggestions">No voice suggestions available</string>
+    <string name="home_voice_suggestions_unavailable">Voice suggestions unavailable</string>
+    <string name="home_default_suggest_describe">Describe surroundings</string>
+    <string name="home_default_suggest_navigate">Navigate to</string>
+    <string name="camera_approx_meters">approx %1$d m</string>
+    <string name="camera_distance_uncertain">distance uncertain</string>
+    <string name="camera_distance_unavailable">distance not available</string>
+    <string name="scan_point_camera_forward">Point camera forward. DrishtiAI is monitoring your path in real time.</string>
+    <string name="scan_path_clear_badge">Path clear • No obstacles in immediate corridor</string>
+    <string name="cane_status_offline">Smart Cane: Offline</string>
+    <string name="cane_action_pair">Pair</string>
+    <string name="cane_action_sim">Sim 45cm</string>
+    <string name="cane_searching">Cane: Searching…</string>
+    <string name="cane_connecting">Cane: Connecting…</string>
+    <string name="cane_paired">Cane: Paired</string>
+    <string name="cane_disconnect">Disconnect</string>
+    <string name="cane_sim_off">Sim Off</string>
+    <string name="cane_tof_active">Cane ToF: Active</string>
+    <string name="cane_tof_format">Cane ToF: %1$d cm %2$s</string>
+    <!-- Indoor / Outdoor Navigation Card -->
+    <string name="indoor_environment_label">ENVIRONMENT</string>
+    <string name="indoor_floor_format">Indoor • Floor %1$d</string>
+    <string name="stairs_floor_format">Stairs • Floor %1$d</string>
+    <string name="elevator_moving">Elevator • Moving</string>
+    <string name="ground_floor_lobby">Ground Floor Lobby</string>
+    <string name="building_exit_reached">Building Exit Reached</string>
+    <string name="sidewalk_outdoors">Sidewalk • Outdoors</string>
+    <string name="outdoor_gps_active">Outdoor • GPS Active</string>
+    <string name="roadway_crossing">Roadway / Crossing</string>
+    <string name="destination_reached">Destination Reached</string>
+    <string name="scanning_environment">Scanning Environment…</string>
+    <string name="status_confirmed">Confirmed</string>
+    <string name="status_conf_format">%1$d%% Conf</string>
+    <string name="speech_camera_eye_opened">Camera visual eye opened.</string>
+    <string name="speech_camera_eye_closed">Camera visual eye closed.</string>
+    <string name="desc_camera_vision_active">Camera vision active. Tap to hide.</string>
+    <string name="desc_open_camera_vision">Open camera vision.</string>
+    <string name="stairs_detected">STAIRS DETECTED</string>
+    <string name="stairs_up_format">↑ Up • Estimated %1$d steps</string>
+    <string name="stairs_down_format">↓ Down • Estimated %1$d steps</string>
+    <string name="total_walking_steps_format">Total walking steps: %1$d</string>
+    <string name="repeat_instruction">Repeat instruction</string>
+    <string name="building_exit_reached_btn">BUILDING EXIT REACHED • START OUTDOOR GPS</string>
+    <string name="camera_eye_active_btn">CAMERA EYE ACTIVE • TAP TO CLOSE</string>
+    <string name="open_camera_eye_btn">OPEN CAMERA EYE • VISUAL GUIDANCE</string>
+    <string name="confirm_floor_btn_format">Confirm Fl %1$d</string>
+    <string name="speech_floor_confirmed_format">Floor %1$d confirmed.</string>
+    <string name="btn_done">Done</string>
+    <string name="btn_change_floor">Change Fl</string>
+    <string name="btn_im_outside">I\'m Out</string>
+    <string name="speech_set_floor_format">Set to floor %1$d.</string>
+    <string name="indoor_guidance_semantics_format">Indoor Environment Guidance: %1$s, Floor %2$d</string>
+
+    <!-- Camera Preview HUD -->
+    <string name="camera_hud_scanning">Scanning surroundings…</string>
+    <string name="camera_hud_close">Close Camera</string>
+    <string name="camera_hud_repeat">Repeat speech</string>
+    <string name="camera_hud_semantics_format">Camera Vision HUD: %1$s</string>
+    <string name="camera_hud_scanning_short">Scanning</string>
+
+    <!-- Target Types -->
+    <string name="target_door">DOOR</string>
+    <string name="target_stairs">STAIRS</string>
+    <string name="target_corridor">CORRIDOR</string>
+    <string name="target_building_exit">BUILDING EXIT</string>
+    <string name="target_elevator">ELEVATOR</string>
+    <string name="target_entrance">ENTRANCE</string>
+    <string name="target_sidewalk">SIDEWALK</string>
+    <string name="target_road">ROAD</string>
+    <string name="target_person">PERSON</string>
+    <string name="target_vehicle">VEHICLE</string>
+    <string name="target_obstacle">OBSTACLE</string>
+    <string name="target_wall">WALL</string>
+    <string name="target_unknown">UNKNOWN</string>
+
+    <!-- Spatial Directions -->
+    <string name="dir_ahead">AHEAD</string>
+    <string name="dir_slightly_left">SLIGHTLY LEFT</string>
+    <string name="dir_slightly_right">SLIGHTLY RIGHT</string>
+    <string name="dir_on_your_left">ON YOUR LEFT</string>
+    <string name="dir_on_your_right">ON YOUR RIGHT</string>
+
+    <!-- Navigation Screen -->
+    <string name="nav_gps_active">Google GPS Active</string>
+    <string name="nav_gps_unavailable">GPS Unavailable</string>
+    <string name="nav_search_placeholder">Search destination…</string>
+    <string name="nav_search_desc">Search destination, landmark or address</string>
+    <string name="nav_clear_search">Clear search</string>
+    <string name="nav_voice_input">Voice Input</string>
+    <string name="nav_voice_input_desc">Tap to speak destination</string>
+    <string name="cat_hospitals">Hospitals</string>
+    <string name="cat_pharmacies">Pharmacies</string>
+    <string name="cat_atms">ATMs</string>
+    <string name="cat_restaurants">Restaurants</string>
+    <string name="cat_petrol_pumps">Petrol pumps</string>
+    <string name="cat_police_station">Police station</string>
+    <string name="nav_map_type">Map Type</string>
+    <string name="nav_map_type_desc">Toggle map satellite or normal view</string>
+    <string name="nav_my_location">My Location</string>
+    <string name="nav_recenter_desc">Recenter map on your current location</string>
+    <string name="nav_nearby_places_format">Nearby Real Google Places (%1$d)</string>
+    <string name="nav_accessible_title">Accessible Google Navigation</string>
+    <string name="nav_accessible_subtitle">Speak or enter any destination above to calculate a live Google route with turn-by-turn voice and haptic guidance.</string>
+    <string name="mode_walk">Walking</string>
+    <string name="mode_drive">Driving</string>
+    <string name="mode_two_wheeler">Two-wheeler</string>
+    <string name="nav_route_metrics_format">%1$d meters • %2$d steps</string>
+    <string name="nav_save_place">Save place to account</string>
+    <string name="nav_start_indoor_guidance">START INDOOR EXIT GUIDANCE</string>
+    <string name="nav_start_navigation">START NAVIGATION</string>
+    <string name="nav_stop">Stop</string>
+    <string name="nav_remaining_distance_format">%1$d m remaining</string>
+    <string name="nav_eta_format">ETA: %1$d min • to %2$s</string>
+    <string name="nav_repeat_heading_desc">Repeat instruction and compass heading</string>
+    <string name="nav_maneuver_distance_format">In %1$d meters</string>
+    <string name="nav_heading_format">Heading %1$d° • Target at %2$s</string>
+    <string name="nav_aligned_proceed">Aligned with path • Proceed forward</string>
+    <string name="nav_turn_towards_format">Turn towards %1$s (%2$s)</string>
+    <string name="nav_search_on_way">Search on Way</string>
+    <string name="nav_arrived_title">You have arrived!</string>
+    <string name="nav_arrived_desc_format">Successfully arrived at %1$s.</string>
+    <string name="nav_new_search">New Search</string>
+    <string name="nav_your_location">Your Location</string>
+    <string name="nav_gps_live_tracking">GPS Live Tracking</string>
+    <string name="nav_places_away_format">%1$d m away</string>
+    <string name="nav_searching_places_format">Searching Google Places for \"%1$s\"…</string>
+    <string name="nav_no_places_format">No places found for \"%1$s\".</string>
+    <string name="nav_directions">Directions</string>
+    <string name="nav_recenter">Recenter</string>
+    <string name="nav_trip_info">Trip information</string>
+    <string name="nav_voice_guidance">Voice guidance</string>
+    <string name="nav_route_overview">Route overview</string>
+    <string name="nav_obstacle_ahead">OBSTACLE AHEAD</string>
+    <string name="nav_preview_steps">Preview Steps</string>
+    <string name="nav_open_maps">Open in Google Maps</string>
+    <string name="nav_done">Done</string>
+    <string name="nav_start_new">Start New Navigation</string>
+    <string name="nav_then_format">Then %1$s</string>
+    <string name="nav_compass_north_up">Switch to Head-up 3D navigation</string>
+    <string name="nav_compass_head_up">Switch to North-up 2D overview</string>
+
+    <!-- Home Screen -->
+    <string name="home_how_can_help">How can I help?</string>
+    <string name="home_telemetry_unverified">● Telemetry Unverified</string>
+    <string name="home_action_scan">SCAN</string>
+    <string name="home_action_navigate">NAVIGATE</string>
+    <string name="home_action_nearby">NEARBY</string>
+    <string name="home_action_describe">DESCRIBE</string>
+    <string name="voice_listening">Listening…</string>
+    <string name="voice_processing_format">Processing: \"%1$s\"</string>
+    <string name="voice_searching_nearby_format">Searching nearby %1$ss…</string>
+    <string name="voice_no_suggestions">No voice suggestions available</string>
+    <string name="voice_try_saying_format">Try saying: \'%1$s\'</string>
+    <string name="topbar_subtitle">AI Vision Assistant</string>
+
+    <!-- Scan Screen -->
+    <string name="scan_camera_active">● Camera active</string>
+    <string name="scan_processing_scene">● Processing scene</string>
+    <string name="scan_listening">🎤 Listening…</string>
+    <string name="scan_searching_view">🔍 Searching camera view…</string>
+    <string name="scan_target_found">🎯 Target found</string>
+    <string name="scan_target_not_in_view">⚠️ Target not in view</string>
+    <string name="scan_path_clear">Path Clear</string>
+    <string name="scan_path_obstructed">Path Obstructed</string>
+    <string name="scan_check_path">Check Path</string>
+    <string name="scan_surroundings">Surroundings</string>
+    <string name="scan_find_target">Find Target</string>
+    <string name="scan_mode_assist">Assist</string>
+    <string name="scan_mode_read">Read</string>
+    <string name="scan_mode_describe">Describe</string>
+    <string name="scan_mode_summarize">Summarize</string>
+    <string name="scan_mode_translate">Translate</string>
+    <string name="scan_btn_check_path">CHECK PATH STATUS</string>
+    <string name="scan_btn_scan_now_format">● SCAN NOW (%1$s)</string>
+    <string name="scan_mobility_output_format">Mobility Output (%1$s)</string>
+    <string name="scan_read_aloud">Read result aloud</string>
+    <string name="scan_copy_text">Copy text</string>
+
+    <!-- Describe Screen -->
+    <string name="describe_ai_active">GEMINI AI 1.5 FLASH ACTIVE</string>
+    <string name="describe_title">Drishti AI Scene Understanding</string>
+    <string name="describe_repeat_audio">Repeat Audio</string>
+    <string name="describe_rescan">Re-Scan</string>
+    <string name="describe_initializing">Initializing camera and AI vision…</string>
+    <string name="describe_analyzing">Analyzing surroundings with Gemini AI…</string>
+
+    <!-- Nearby Screen -->
+    <string name="nearby_title">Nearby Essential Places</string>
+    <string name="nearby_subtitle">Real location search via Geocoder and GPS</string>
+    <string name="nearby_empty">No nearby places found in this category.</string>
+    <string name="cat_railway_stations">Railway stations</string>
+    <string name="cat_bus_stops">Bus stops</string>
+
+    <!-- Emergency Screen -->
+    <string name="sos_title_standby">EMERGENCY ASSISTANCE</string>
+    <string name="sos_title_countdown_format">SOS COUNTDOWN: %1$ds</string>
+    <string name="sos_title_active">EMERGENCY SOS ACTIVE</string>
+    <string name="sos_desc_countdown">Broadcasting live GPS + Cane ToF to approved guardians upon timer expiration.</string>
+    <string name="sos_desc_active">Broadcasting live GPS, Cane ToF distance, and battery to approved guardians.</string>
+    <string name="sos_desc_standby">Press the button below to initiate emergency broadcast or dial 112 directly.</string>
+    <string name="sos_telemetry_title">Guardian SOS Telemetry</string>
+    <string name="sos_btn_broadcast_now">BROADCAST IMMEDIATELY</string>
+    <string name="sos_btn_cancel_countdown">Cancel Countdown (False Alarm)</string>
+    <string name="sos_btn_resolve">I Am Safe (Resolve SOS)</string>
+    <string name="sos_btn_control_room">Open Full SOS Control Room</string>
+    <string name="sos_btn_trigger">TRIGGER EMERGENCY SOS</string>
+    <string name="sos_btn_call_112">CALL 112 (POLICE / MEDICAL)</string>
+
+    <!-- Auth Screens -->
+    <string name="auth_drishti_brand_prefix">DRISHTI-</string>
+    <string name="auth_drishti_brand_suffix">AI</string>
+    <string name="auth_drishti_subtitle">AI Vision &amp; Mobility Assistant</string>
+    <string name="auth_choose_role">Choose Your Role</string>
+    <string name="auth_choose_role_prefix">Choose Your </string>
+    <string name="auth_choose_role_suffix">Role</string>
+    <string name="auth_choose_role_desc">Select how you will be using DrishtiAI to access the appropriate sign-in experience.</string>
+    <string name="auth_role_embedded_title">Embedded User</string>
+    <string name="auth_role_embedded_desc">For visually impaired individuals using voice assistance, obstacle detection, and navigation.</string>
+    <string name="auth_role_parent_title">Parent / Guardian</string>
+    <string name="auth_role_parent_desc">For caregivers and family monitoring emergency contacts, safety preferences, and linked users.</string>
+    <string name="auth_new_to_drishti">New to DrishtiAI?</string>
+    <string name="auth_btn_embedded_signup">Embedded Sign Up</string>
+    <string name="auth_btn_parent_signup">Parent Sign Up</string>
+    <string name="auth_security_note">Secure Supabase Authentication • HTTPS/TLS in Transit</string>
+    <string name="auth_safety_privacy_btn">Safety Disclosures &amp; Privacy Notice</string>
+
+    <!-- Sign In / Sign Up Form Strings -->
+    <string name="auth_badge_embedded_user">EMBEDDED USER</string>
+    <string name="auth_badge_parent_guardian">PARENT / GUARDIAN</string>
+    <string name="auth_badge_embedded_signup">EMBEDDED USER SIGN UP</string>
+    <string name="auth_badge_parent_signup">PARENT / GUARDIAN SIGN UP</string>
+    <string name="auth_welcome_prefix">Welcome </string>
+    <string name="auth_welcome_suffix">Back</string>
+    <string name="auth_create_account_prefix">Create Your </string>
+    <string name="auth_create_account_suffix">Account</string>
+    <string name="auth_embedded_signin_desc">Sign in to access your assistive vision and navigation system.</string>
+    <string name="auth_parent_signin_desc">Sign in to manage emergency contacts and view safety preferences.</string>
+    <string name="auth_embedded_signup_desc">Set up your DrishtiAI account to continue.</string>
+    <string name="auth_parent_signup_desc">Set up your DrishtiAI account to continue.</string>
+    <string name="auth_label_full_name">Full Name</string>
+    <string name="auth_label_email">Email Address</string>
+    <string name="auth_label_parent_email">Parent Email Address</string>
+    <string name="auth_label_phone_optional">Phone Number (Optional)</string>
+    <string name="auth_label_preferred_language">Preferred Language</string>
+    <string name="auth_label_password">Password</string>
+    <string name="auth_label_password_rules">Password (min 8 chars, letter &amp; digit)</string>
+    <string name="auth_label_confirm_password">Confirm Password</string>
+    <string name="auth_placeholder_email">name@example.com</string>
+    <string name="auth_placeholder_parent_email">parent@example.com</string>
+    <string name="auth_placeholder_phone">+91 9876543210</string>
+    <string name="auth_placeholder_name">John Doe</string>
+    <string name="auth_btn_forgot_password">Forgot Password?</string>
+    <string name="auth_btn_signin">Sign In</string>
+    <string name="auth_btn_signin_as_parent">Sign In as Parent</string>
+    <string name="auth_btn_create_account">Create Account</string>
+    <string name="auth_btn_switch_role">Switch Role</string>
+    <string name="auth_dont_have_account">Don\'t have an account?</string>
+    <string name="auth_new_guardian">New guardian?</string>
+    <string name="auth_already_have_account">Already have an account?</string>
+    <string name="auth_sec_emergency_contact">Emergency Contact</string>
+    <string name="auth_sec_emergency_contact_sub">Required for emergency/SOS contact features</string>
+    <string name="auth_label_emergency_name">Contact Name</string>
+    <string name="auth_label_emergency_phone">Contact Phone</string>
+    <string name="auth_placeholder_emergency_name">Primary contact name</string>
+
+    <!-- Permission Onboarding Strings -->
+    <string name="perm_onboarding_granted_format">✓ %1$s Granted</string>
+    <string name="perm_onboarding_open_settings">Open Settings to Grant Access</string>
+    <string name="perm_onboarding_grant_format">Grant %1$s</string>
+    <string name="perm_onboarding_grant_optional_format">Grant %1$s (Optional)</string>
+    <string name="perm_onboarding_denied_warning">Permission was denied. Please tap \'Open Settings\' to enable it manually.</string>
+    <string name="perm_onboarding_needed_warning">This access is needed for assistant functionality. Tap \'Grant\' to proceed.</string>
+    <string name="perm_onboarding_how_it_works">HOW DRISHTI USES IT</string>
+    <string name="perm_onboarding_privacy_title">PRIVACY &amp; PERMISSION</string>
+    <string name="perm_onboarding_back">Back</string>
+    <string name="perm_onboarding_next">Next</string>
+    <string name="perm_onboarding_complete">Complete Onboarding</string>
+
+    <!-- 12 Permission Item Translations -->
+    <string name="perm_cat_microphone">MICROPHONE PERMISSION</string>
+    <string name="perm_title_microphone">Microphone Access</string>
+    <string name="perm_desc_microphone">Allows Drishti to hear your voice commands, queries, and assistant interactions when voice activation is engaged.</string>
+
+    <string name="perm_cat_camera">CAMERA PERMISSION</string>
+    <string name="perm_title_camera">Camera Access</string>
+    <string name="perm_desc_camera">Allows Drishti\'s computer vision to detect real-time obstacles, read text aloud, scan documents, and describe your surroundings.</string>
+
+    <string name="perm_cat_fine_location">PRECISE LOCATION PERMISSION</string>
+    <string name="perm_title_fine_location">Precise Location Access</string>
+    <string name="perm_desc_fine_location">Provides accurate turn-by-turn pedestrian walking directions, exact landmark orientation, and emergency GPS dispatch.</string>
+
+    <string name="perm_cat_coarse_location">APPROXIMATE LOCATION PERMISSION</string>
+    <string name="perm_title_coarse_location">Approximate Location Access</string>
+    <string name="perm_desc_coarse_location">Allows Drishti to query nearby neighborhood facilities, public transit stops, and city-level services efficiently.</string>
+
+    <string name="perm_cat_phone_state">PHONE STATE PERMISSION</string>
+    <string name="perm_title_phone_state">Phone State Access</string>
+    <string name="perm_desc_phone_state">Detects incoming ringing phone calls so Drishti can immediately alert you and announce who is calling.</string>
+
+    <string name="perm_cat_answer_calls">CALL CONTROL PERMISSION</string>
+    <string name="perm_title_answer_calls">Answer Calls Access</string>
+    <string name="perm_desc_answer_calls">Allows Drishti to answer or decline incoming ringing calls in response to your verbal voice commands.</string>
+
+    <string name="perm_cat_call_phone">DIRECT DIALING PERMISSION</string>
+    <string name="perm_title_call_phone">Make Calls Access</string>
+    <string name="perm_desc_call_phone">Enables Drishti to place emergency calls to 112 or dial your saved guardians directly upon voice request.</string>
+
+    <string name="perm_cat_contacts">CONTACTS PERMISSION</string>
+    <string name="perm_title_contacts">Contacts Access</string>
+    <string name="perm_desc_contacts">Allows Drishti to query your address book so incoming callers can be announced by their real name instead of a raw number.</string>
+
+    <string name="perm_cat_call_log">CALL LOG PERMISSION</string>
+    <string name="perm_title_call_log">Call Log Access</string>
+    <string name="perm_desc_call_log">Provides caller identification fallback when telecom carriers deliver incoming numbers with a delay.</string>
+
+    <string name="perm_cat_bluetooth_scan">BLUETOOTH SCANNING PERMISSION</string>
+    <string name="perm_title_bluetooth_scan">Bluetooth Scanning Access</string>
+    <string name="perm_desc_bluetooth_scan">Discovers nearby supported ESP32 Smart Canes and external ultrasonic/ToF obstacle sensors.</string>
+
+    <string name="perm_cat_bluetooth_connect">BLUETOOTH CONNECTION PERMISSION</string>
+    <string name="perm_title_bluetooth_connect">Bluetooth Connect Access</string>
+    <string name="perm_desc_bluetooth_connect">Connects and streams real-time obstacle distance data and haptic feedback to/from your smart cane.</string>
+
+    <string name="perm_cat_notifications">NOTIFICATIONS PERMISSION</string>
+    <string name="perm_title_notifications">Notifications Access</string>
+    <string name="perm_desc_notifications">Maintains persistent background service controls, incoming call quick-actions, and emergency status notifications.</string>
+    <string name="home_greeting_hello">Hello, Ask Me </string>
+    <string name="home_greeting_ask_me"></string>
+    <string name="home_greeting_anything_you_need">Anything You Need</string>
+    <string name="home_try_saying_prefix">Try saying: </string>
+
+    <!-- Offline Maps -->
+    <string name="offline_maps_title">Offline Maps</string>
+    <string name="offline_maps_download_city">Download City</string>
+    <string name="offline_maps_search_placeholder">Search city (e.g. Pune)</string>
+    <string name="offline_maps_btn_download">DOWNLOAD</string>
+    <string name="offline_maps_downloaded_title">Downloaded Maps</string>
+    <string name="offline_maps_empty">No maps downloaded yet.</string>
+    <string name="offline_maps_available_fmt">%1$d%% - Available Offline</string>
+    <string name="offline_maps_size_estimate">Map size: ~150 MB</string>
+
+    <!-- Parent Settings -->
+    <string name="parent_settings_title">Parent Settings</string>
+    <string name="parent_account_details">Account Details</string>
+    <string name="parent_account_fallback">Parent Account</string>
+    <string name="parent_role_label">Role: Parent / Guardian</string>
+    <string name="parent_nav_pairing_title">Guardian Pairing</string>
+    <string name="parent_nav_pairing_sub">Link and manage connected Drishti AI devices</string>
+    <string name="parent_nav_connected_users_title">Connected Users</string>
+    <string name="parent_nav_connected_users_sub">%1$d approved embedded user(s)</string>
+    <string name="parent_nav_privacy_title">Privacy &amp; RLS Isolation</string>
+    <string name="parent_nav_privacy_sub">Data access is strictly gated by approved guardian relationship</string>
+    <string name="parent_about_title">About Drishti AI</string>
+    <string name="parent_about_sub">Assistive Vision &amp; Navigation Platform</string>
+    <string name="parent_about_version">Version %1$s</string>
+    <string name="parent_btn_sign_out">Sign Out from Guardian Portal</string>
+    <string name="parent_privacy_dialog_title">Privacy &amp; Security Architecture</string>
+    <string name="parent_privacy_p1">• Supabase Row Level Security (RLS) is enforced at the database layer. Guardians can only query telemetry and SOS sessions for children whose pairing relationship is in \'APPROVED\' status.</string>
+    <string name="parent_privacy_p2">• Embedded users retain sovereign control: pairing can be revoked instantly from the Drishti child app.</string>
+    <string name="parent_privacy_p3">• Device speech, haptic preferences, and local emergency contacts remain strictly on-device in sandboxed encrypted storage and are never uploaded.</string>
+    <string name="btn_understood">Understood</string>
+    <string name="parent_sign_out_confirm_msg">Are you sure you want to sign out from the Parent &amp; Guardian portal?</string>
+
+    <!-- Settings Emergency Contact & Assistant Details -->
+    <string name="edit_emergency_contact_title">Edit Emergency Contact</string>
+    <string name="contact_name_label">Contact Name</string>
+    <string name="phone_number_label">Phone Number</string>
+    <string name="btn_saving">Saving…</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_edit">Edit</string>
+    <string name="asst_refresh_status">Refresh Status</string>
+    <string name="asst_capability_sub">Live hardware and Android framework capability reporting for this device:</string>
+    <string name="asst_default_active">Default Assistant Active</string>
+    <string name="asst_default_active_exp">Drishti is selected as the default digital assistant</string>
+    <string name="asst_default_inactive_exp">Drishti is not currently set as default assistant</string>
+    <string name="asst_voice_interaction">Voice Interaction Service</string>
+    <string name="asst_voice_interaction_exp">DrishtiVoiceInteractionService framework registration</string>
+    <string name="asst_system_assistant">System Assistant</string>
+    <string name="asst_system_assistant_exp">Android voice input settings and assist intent support</string>
+    <string name="asst_hardware_dsp">Hardware DSP Hotword</string>
+    <string name="asst_hardware_dsp_avail_exp">Hardware low-power sound trigger available</string>
+    <string name="asst_hardware_dsp_unavail_exp">Requires OEM/system-privileged DSP hotword support</string>
+    <string name="asst_app_wakeword">Application Wake Word</string>
+    <string name="asst_app_wakeword_exp">\"Hey Drishti\" via application-level audio processing</string>
+    <string name="asst_on_device_rec">On-Device Recognition</string>
+    <string name="asst_on_device_avail_exp">Local on-device acoustic models available</string>
+    <string name="asst_on_device_unavail_exp">On-device speech recognizer unavailable</string>
+    <string name="asst_btn_set_assistant">Set Drishti as Assistant</string>
+    <string name="asst_btn_manage_settings">Manage Assistant Settings</string>
+    <string name="asst_btn_enable_hands_free">Enable Hands-Free</string>
+    <string name="asst_active_engine">Active Recognition Engine</string>
+    <string name="asst_status_active">Active</string>
+    <string name="asst_status_inactive">Inactive</string>
+    <string name="asst_status_available">Available</string>
+    <string name="asst_status_unavailable">Unavailable</string>
+    <string name="asst_status_unsupported">Unsupported</string>
+
+    <!-- Scan Screen Modes & Controls -->
+    <string name="scan_mode_path">Path</string>
+    <string name="scan_btn_pair_stream">Pair / Stream</string>
+    <string name="scan_connecting_stream">Connecting to ESP32-CAM stream…</string>
+    <string name="scan_start_stream">Start ESP32 Stream</string>
+    <string name="scan_stream_disconnected">ESP32-CAM stream disconnected</string>
+    <string name="scan_capture">Capture / Scan</string>
+    <string name="scan_toggle_flash">Toggle Flashlight</string>
+    <string name="scan_switch_camera">Switch Camera Source</string>
+    <string name="scan_live_feed_desc">Live ESP32-CAM Video Feed</string>
+
+    <!-- Emergency Screen & Telemetry -->
+    <string name="sos_status_standby">Status: Standby • 0 active alerts</string>
+    <string name="sos_status_active_fmt">Status: Active • Guardians Alerted: %1$d</string>
+    <string name="sos_countdown_starting_fmt">Starting session in %1$ds…</string>
+    <string name="sos_btn_call_contact_fmt">CALL %1$s: %2$s</string>
+    <string name="sos_call_emergency_contact">Emergency Contact</string>
+
+    <!-- Guardian Pairing Dialogs -->
+    <string name="revoke_pairing_title">Revoke Pairing</string>
+    <string name="revoke_pairing_confirm_msg">Are you sure you want to revoke this pairing relationship? You will lose access to telemetry and alerts until re-paired.</string>
+    <string name="btn_revoke">Revoke</string>
+
+    <!-- Connection Rows -->
+    <string name="conn_phone">Phone</string>
+    <string name="conn_smart_cane">Smart Cane</string>
+    <string name="conn_last_seen">Last Seen</string>
+    <string name="conn_online">Online</string>
+    <string name="conn_offline">Offline</string>
+    <string name="conn_connected">Connected</string>
+    <string name="conn_disconnected">Disconnected</string>
+
+
+    <!-- Connection & Permissions -->
+    <string name="status_connecting">Connecting…</string>
+    <string name="btn_disconnect">Disconnect</string>
+    <string name="btn_retry">Retry</string>
+    <string name="btn_switch">Switch</string>
+    <string name="btn_pair">Pair</string>
+    <string name="btn_view_emergency_details">View Emergency Details</string>
+
+    <!-- Telemetry & Device Types -->
+    <string name="device_phone">Phone</string>
+    <string name="device_battery">Battery</string>
+    <string name="device_smart_cane">Smart Cane</string>
+    <string name="device_gps">GPS</string>
+
+    <!-- Emergency SOS Activity -->
+    <string name="sos_alert_title">Emergency SOS Alert</string>
+    <string name="sos_telemetry_gps">GPS Location</string>
+    <string name="sos_telemetry_battery">Device Battery</string>
+    <string name="sos_telemetry_tof">Smart Cane ToF</string>
+    <string name="sos_telemetry_trigger">Trigger Source</string>
+    <string name="sos_resolve_safe">I Am Safe (Resolve SOS)</string>
+    <string name="sos_cancel_alarm">Cancel / False Alarm</string>
+    <string name="sos_start_emergency">Start Emergency SOS</string>
+    <string name="sos_return_nav">Return to Navigation</string>
+
+    <!-- Live Location -->
+    <string name="location_coordinates">Coordinates</string>
+    <string name="location_accuracy">GPS Accuracy</string>
+    <string name="location_last_updated">Last Updated</string>
+
+    <!-- Settings Dialogs & Guardian -->
+    <string name="hands_free_dialog_title">Hands-Free Wake Word</string>
+    <string name="hands_free_dialog_msg1">Drishti needs continuous microphone access to detect \"Hey Drishti\".</string>
+    <string name="hands_free_dialog_msg2">Android may show the microphone privacy indicator while hands-free detection is active.</string>
+    <string name="btn_enable_hands_free">Enable Hands-Free</string>
+    <string name="btn_keep_on_demand">Keep On-Demand</string>
+    <string name="title_manage_guardian_pairing">Manage Guardian Pairing &amp; Consent</string>
+
+</resources>

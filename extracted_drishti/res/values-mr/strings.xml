@@ -1,0 +1,829 @@
+<resources>
+    <string name="app_name">दृष्टी AI</string>
+
+    <!-- Splash / Loading Screen -->
+    <string name="splash_tagline">AI-सहाय्यित गतिशीलता आणि सुरक्षा साथीदार</string>
+    <string name="splash_desc">हालचाल, नेव्हिगेशन आणि आजूबाजूच्या परिसराच्या जाणीवेसाठी सहाय्य करण्यासाठी डिझाइन केलेले. नेहमी स्वतःच्या विवेकाचा वापर करा आणि स्थानिक सुरक्षा नियमांचे पालन करा.</string>
+    <string name="splash_initializing">दृष्टी AI सुरू होत आहे…</string>
+
+    <!-- Language Selection Screen -->
+    <string name="language_select_badge">भाषा निवड</string>
+    <string name="language_select_title">तुमची भाषा निवडा</string>
+    <string name="language_select_subtitle">ॲप इंटरफेस, आवाज मार्गदर्शन आणि मदतीसाठी तुमची पसंतीची भाषा निवडा.</string>
+    <string name="language_select_continue">%1$s मध्ये पुढे जा →</string>
+    <string name="language_english_label">इंग्रजी</string>
+    <string name="language_english_native">English</string>
+    <string name="language_hindi_label">हिंदी</string>
+    <string name="language_hindi_native">हिन्दी</string>
+    <string name="language_marathi_label">मराठी</string>
+    <string name="language_marathi_native">मराठी</string>
+
+    <!-- First-Run Safety Notice -->
+    <string name="first_run_title">पुढे जाण्यापूर्वी</string>
+    <string name="first_run_subtitle">सुरक्षा आणि सहाय्यक वापर सूचना</string>
+    <string name="first_run_point_1">दृष्टी AI सहाय्य प्रदान करते, संपूर्ण सुरक्षेची हमी नाही.</string>
+    <string name="first_run_point_2">कॅमेरा आणि AI निष्कर्ष चुकीचे किंवा विलंबाने मिळू शकतात.</string>
+    <string name="first_run_point_3">इमारतींच्या आत किंवा गर्दीच्या ठिकाणी GPS चुकीचे किंवा अनुपलब्ध असू शकते.</string>
+    <string name="first_run_point_4">गोंगाटाच्या वातावरणात आवाजाचे आदेश समजण्यात त्रुटी येऊ शकते.</string>
+    <string name="first_run_point_5">नेटवर्क आणि क्लाउड सेवा कधीही अनुपलब्ध होऊ शकतात.</string>
+    <string name="first_run_point_6">आणीबाणीच्या प्रसंगी केवळ या ॲपवर अवलंबून राहू नका.</string>
+    <string name="first_run_point_7">गरज भासल्यास त्वरित स्थानिक आणीबाणी सेवांशी (112) संपर्क साधा.</string>
+    <string name="btn_understand_continue">मला समजले आणि पुढे जा</string>
+    <string name="btn_read_safety_info">संपूर्ण सुरक्षा माहिती वाचा</string>
+
+    <!-- Navigation Bar & Top Bar -->
+    <string name="nav_home">होम</string>
+    <string name="nav_scan">स्कॅन</string>
+    <string name="nav_navigate">मार्गदर्शन</string>
+    <string name="nav_settings">सेटिंग्ज</string>
+    <string name="nav_describe">वर्णन</string>
+    <string name="nav_nearby">जवळपास</string>
+    <string name="nav_emergency">आणीबाणी</string>
+    <string name="nav_sos_btn">SOS</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">सेटिंग्ज</string>
+    <string name="settings_subtitle">तुमचा दृष्टी AI अनुभव सानुकूलित करा</string>
+
+    <!-- Sections -->
+    <string name="section_account">खाते</string>
+    <string name="section_voice_language">आवाज आणि भाषा</string>
+    <string name="section_accessibility">सुलभता (Accessibility)</string>
+    <string name="section_guardian_family">पालक आणि कुटुंब</string>
+    <string name="section_safety_privacy_info">सुरक्षा, गोपनीयता आणि माहिती</string>
+    <string name="section_support_reporting">मदत आणि तक्रार नोंदणी</string>
+    <string name="section_about">ॲप बद्दल</string>
+    <string name="section_hardware_optional">पर्यायी हार्डवेअर एकत्रीकरण</string>
+
+    <!-- Account Section -->
+    <string name="account_profile">प्रोफाइल</string>
+    <string name="account_security">खाते आणि सुरक्षा</string>
+    <string name="account_role_embedded">मुख्य वापरकर्ता</string>
+    <string name="account_role_parent">पालक / मार्गदर्शक</string>
+    <string name="btn_sign_out">साइन आउट करा</string>
+    <string name="dialog_sign_out_title">साइन आउट</string>
+    <string name="dialog_sign_out_msg">तुम्हाला खात्री आहे की तुम्ही दृष्टी AI खात्यातून साइन आउट करू इच्छिता?</string>
+    <string name="btn_cancel">रद्द करा</string>
+    <string name="btn_back">मागे</string>
+    <string name="btn_delete">हटवा</string>
+
+    <!-- Voice & Language Section -->
+    <string name="app_language_title">ॲपची भाषा</string>
+    <string name="app_language_desc">ॲपच्या स्क्रीनसाठी भाषा निवडा</string>
+    <string name="voice_language_title">आवाजाची भाषा</string>
+    <string name="voice_language_desc">आवाज ओळख आणि बोलून मार्गदर्शन मिळवण्यासाठी भाषा निवडा</string>
+    <string name="lang_auto_detect">आपोआप ओळखा (Auto Detect)</string>
+    <string name="lang_english">English</string>
+    <string name="lang_hindi">हिन्दी</string>
+    <string name="lang_marathi">मराठी</string>
+    <string name="voice_speed_title">आवाजाचा वेग</string>
+    <string name="voice_volume_title">आवाजाची पातळी</string>
+    <string name="voice_commands_title">व्हॉईस कमांड्स</string>
+    <string name="voice_commands_desc">समर्थित व्हॉईस कमांड्स आणि नेव्हिगेशन सूचनांची यादी पहा</string>
+    <string name="speech_settings_title">ध्वनी सेटिंग्ज</string>
+    <string name="voice_wake_title">व्हॉईस वेक सेवा</string>
+    <string name="voice_wake_desc">\'नमस्कार दृष्टी\' किंवा \'Hello Drishti\' ऐकण्याची सेवा</string>
+
+    <!-- Accessibility Section -->
+    <string name="accessibility_preferences_title">सुलभता प्राधान्ये</string>
+    <string name="large_text_title">मोठा मजकूर</string>
+    <string name="large_text_desc">वाचणे सुलभ करण्यासाठी फॉन्टचा आकार वाढवा</string>
+    <string name="high_contrast_title">उच्च कॉन्ट्रास्ट</string>
+    <string name="high_contrast_desc">दृष्टिबाधित व्यक्तींसाठी स्पष्ट आणि ठळक रंग</string>
+    <string name="talkback_support_title">TalkBack अनुकूलता</string>
+    <string name="talkback_support_desc">स्क्रीन रीडरसाठी सविस्तर वर्णन आणि मदत</string>
+    <string name="haptic_touch_title">स्पर्श केल्यावर कंपन (Haptic)</string>
+    <string name="haptic_nav_title">वळणावर दिशादर्शक कंपन</string>
+    <string name="haptic_safety_title">धोका आणि खड्ड्यांच्या सूचनेसाठी कंपन</string>
+    <string name="reset_settings_title">प्राधान्ये रीसेट करा</string>
+    <string name="reset_settings_desc">सर्व आवाज, सुलभता आणि हार्डवेअर प्राधान्ये मूळ मूल्यांवर पुनर्संचयित करा</string>
+    <string name="reset_settings_dialog_title">प्राधान्ये मूळ मूल्यांवर रीसेट करायची?</string>
+    <string name="reset_settings_dialog_msg">हे आवाजाचा वेग, सुलभता स्विचेस, हॅप्टिक सेटिंग्ज आणि हार्डवेअर अंतर मर्यादा मूळ मूल्यांवर पुनर्संचयित करेल. तुमचे खाते लॉगिन आणि पालक जोडण्या प्रभावित होणार नाहीत.</string>
+    <string name="btn_reset_defaults">डिफॉल्टवर रीसेट करा</string>
+    <string name="btn_reset_settings">सेटिंग्ज रीसेट करा</string>
+    <string name="reset_settings_success">प्राधान्ये मूळ मूल्यांवर पुनर्संचयित केली आहेत.</string>
+    <string name="btn_open_system_settings">अँड्रॉइड ॲप सेटिंग्ज उघडा</string>
+
+    <!-- Guardian & Family Section -->
+    <string name="guardian_pairing_title">पालक जोडणे (Pairing)</string>
+    <string name="guardian_pairing_desc">सुरक्षिततेसाठी पालक किंवा कुटुंबियांच्या खात्याशी कनेक्ट करा</string>
+    <string name="guardian_consent_notice">पालकांची जोडणी आपोआप होत नाही. कनेक्शनसाठी योग्य खाते संबंध आणि तुमची स्पष्ट संमती आवश्यक आहे.</string>
+    <string name="guardian_consent_sub">तुमचे पालक कनेक्शन केवळ पेअरिंग आणि मंजुरी प्रक्रियेद्वारेच तयार होते.</string>
+    <string name="guardian_btn_generate">6-अंकी पेअरिंग कोड तयार करा</string>
+    <string name="guardian_btn_regenerate">पुन्हा नवीन कोड तयार करा</string>
+    <string name="guardian_code_active">सक्रिय पेअरिंग कोड</string>
+    <string name="guardian_code_expiry">15 मिनिटांत कालबाह्य • फक्त एकदाच वापर</string>
+    <string name="guardian_pending_requests">प्रलंबित विनंत्या</string>
+    <string name="guardian_approved_guardians">मंजूर केलेले पालक</string>
+    <string name="guardian_no_linked">सध्या कोणतेही पालक जोडलेले नाहीत.</string>
+    <string name="guardian_btn_approve">मंजूर करा</string>
+    <string name="guardian_btn_decline">नाकारा</string>
+    <string name="guardian_btn_revoke">परवानगी काढून घ्या</string>
+    <string name="guardian_connection_status">कनेक्शन स्थिती</string>
+    <string name="guardian_status_active">सक्रिय आणि मंजूर</string>
+    <string name="guardian_status_pending">वापरकर्त्याच्या मंजुरीची प्रतीक्षा</string>
+
+    <!-- Safety, Privacy & Information Section -->
+    <string name="item_safety_notice_title">सुरक्षा आणि सहाय्यक वापर सूचना</string>
+    <string name="item_safety_notice_sub">पर्यावरणीय मर्यादा, सेन्सर त्रुटी आणि वैयक्तिक सुरक्षेची काळजी</string>
+    <string name="item_privacy_policy_title">गोपनीयता आणि डेटा प्रक्रिया</string>
+    <string name="item_privacy_policy_sub">गोपनीयता धोरण, डेटा माहिती आणि स्थानिक ऑन-डिव्हाइस प्रक्रिया</string>
+    <string name="item_permission_center_title">परवानगी केंद्र (Permissions)</string>
+    <string name="item_permission_center_sub">कॅमेरा, मायक्रोफोन, लोकेशन आणि ब्लूटूथ परवानग्यांची पारदर्शक कारणे</string>
+    <string name="item_emergency_sos_title">आणीबाणी आणि SOS माहिती</string>
+    <string name="item_emergency_sos_sub">पालक अलर्ट मर्यादा, GPS परिस्थिती आणि 112 थेट संपर्क</string>
+    <string name="item_ai_transparency_title">AI पारदर्शकता</string>
+    <string name="item_ai_transparency_sub">AI मॉडेल्सच्या मर्यादा, प्रतिमा ओळख आणि सेन्सर नियम</string>
+    <string name="item_security_center_title">सुरक्षा केंद्र (Security Center)</string>
+    <string name="item_security_center_sub">पुरावा-आधारित पडताळणी, RLS डेटा सुरक्षितता आणि त्रुटी नोंदणी</string>
+    <string name="item_terms_of_use_title">वापराच्या अटी</string>
+    <string name="item_terms_of_use_sub">नियम व अटी, दायित्व मर्यादा आणि आणीबाणी सेवा अटी</string>
+    <string name="item_accessibility_notice_title">सुलभता सूचना</string>
+    <string name="item_accessibility_notice_sub">TalkBack मार्गदर्शन, हॅप्टिक फीडबॅक आणि बहुभाषिक आवाज सहाय्य</string>
+
+    <!-- Support & Reporting Section -->
+    <string name="item_report_incident_title">समस्या किंवा घटनेची तक्रार करा</string>
+    <string name="item_report_incident_sub">अडथळा ओळख, नेव्हिगेशन किंवा आवाजाबद्दल तांत्रिक अभिप्राय द्या</string>
+    <string name="item_security_report_title">सुरक्षा त्रुटी (Vulnerability) नोंदवा</string>
+    <string name="item_security_report_sub">सुरक्षा समस्या थेट आमच्या इंजिनिअरिंग टीमकडे पाठवा</string>
+
+    <!-- About Section -->
+    <string name="about_drishti_title">दृष्टी AI</string>
+    <string name="about_tagline">AI-सहाय्यित गतिशीलता आणि सुरक्षा साथीदार</string>
+    <string name="about_version_label">आवृत्ती</string>
+    <string name="about_version_value">2.0 स्थिर (बिल्ड 2026)</string>
+    <string name="about_opensource_title">मुक्त स्रोत आणि तृतीय-पक्ष सूचना</string>
+    <string name="about_opensource_sub">TensorFlow Lite, MobileNet, Supabase, Google Maps आणि Places SDKs</string>
+
+    <!-- Hardware / Cane Section (Optional) -->
+    <string name="hardware_optional_title">स्मार्ट काठी (पर्यायी / भविष्यातील हार्डवेअर)</string>
+    <string name="hardware_optional_desc">पर्यायी ESP32 टाइम-ऑफ-फ्लाइट छडी एकत्रीकरण (प्रायोगिक ॲक्सेसरी)</string>
+    <string name="hardware_optional_note">टीप: दृष्टी AI पूर्णपणे तुमच्या स्मार्टफोनवर काम करण्यासाठी डिझाइन केलेले आहे. स्मार्ट काठी हार्डवेअर भविष्यातील एक पर्यायी ॲक्सेसरी आहे.</string>
+
+    <!-- Safety Notice Detailed Screen -->
+    <string name="safety_screen_header">महत्त्वाची सुरक्षा माहिती</string>
+    <string name="safety_screen_sub">अनिवार्य सहाय्यक वापर सूचना आणि मर्यादा</string>
+    <string name="safety_core_statement">दृष्टी AI कृत्रिम बुद्धिमत्ता आधारित दृश्य ओळख, नेव्हिगेशन आणि आवाज सहाय्य प्रदान करते. प्रकाश, हवामान, कॅमेरा मर्यादा, नेटवर्क आणि GPS अचूकतेमुळे परिणामांवर परिणाम होऊ शकतो.</string>
+    <string name="safety_caveat_lighting_title">प्रकाश आणि हवामान</string>
+    <string name="safety_caveat_lighting_desc">कमी प्रकाश, थेट सूर्यप्रकाश, मुसळधार पाऊस किंवा धुक्यामुळे अडथळा ओळखण्याची क्षमता कमी होऊ शकते.</string>
+    <string name="safety_caveat_gps_title">GPS आणि वळण मार्गदर्शन</string>
+    <string name="safety_caveat_gps_desc">इमारतींच्या आत किंवा गर्दीत GPS अचूकता कमी होऊ शकते. दिशानिर्देश केवळ मार्गदर्शनासाठी आहेत.</string>
+    <string name="safety_caveat_ai_title">AI त्रुटी आणि मर्यादा</string>
+    <string name="safety_caveat_ai_desc">कॉम्प्युटर व्हिजन मॉडेल्सकडून कधीकधी चुकीची ओळख होऊ शकते. रस्ता ओलांडताना केवळ AI वर विसंबून राहू नका.</string>
+    <string name="safety_caveat_network_title">कनेक्टिव्हिटी आणि क्लाउड</string>
+    <string name="safety_caveat_network_desc">कमी नेटवर्क असलेल्या भागात क्लाउड सेवा विस्कळीत होऊ शकतात. फोनवरील लोकल व्हिजन चालू राहील.</string>
+    <string name="safety_caveat_hardware_title">पर्यायी स्मार्ट काठी ॲक्सेसरी</string>
+    <string name="safety_caveat_hardware_desc">बाह्य सेन्सर्स केवळ पर्यायी साधने आहेत. मऊ किंवा तिरक्या पृष्ठभागांवर सेन्सरचा अंदाज बदलू शकतो.</string>
+    <string name="safety_footer_reminder">प्रवासात नेहमी स्वतःची वैयक्तिक दक्षता आणि पारंपारिक पांढरी काठी (White Cane) वापरा.</string>
+
+    <!-- Privacy & Data Policy Screen -->
+    <string name="privacy_banner_title">गोपनीयता आणि डेटा प्रक्रिया सूचना</string>
+    <string name="privacy_banner_desc">ही सूचना स्पष्ट करते की दृष्टी AI वैयक्तिक डेटा कसा हाताळते आणि संबंधित भारतीय गोपनीयता आवश्यकता लक्षात घेऊन हे तयार केले आहे.</string>
+    <string name="privacy_local_first_title">स्थानिक (On-Device) सेन्सर प्रक्रिया</string>
+    <string name="privacy_local_first_desc">कॅमेरा दृश्ये आणि मायक्रोफोनचा आवाज 100% तुमच्या फोनवरच प्रोसेस होतो. कोणताही व्हिडिओ किंवा आवाज सर्व्हरवर सेव्ह केला जात नाही.</string>
+    <string name="privacy_data_inventory_title">डेटा प्रक्रिया तपशील</string>
+    <string name="privacy_rights_title">वापरकर्त्याचे अधिकार आणि नियंत्रण</string>
+    <string name="privacy_right_access">पाहण्याचा अधिकार: तुमचा प्रोफाइल डेटा आणि सेटिंग्ज कधीही तपासा.</string>
+    <string name="privacy_right_correction">दुरुस्तीचा अधिकार: आणीबाणीचे संपर्क आणि प्राधान्ये सहज बदला.</string>
+    <string name="privacy_right_revocation">रद्द करण्याचा अधिकार: कोणत्याही पालकाची जोडणी त्वरित काढून टाका.</string>
+    <string name="privacy_right_erasure">हटवण्याचा अधिकार: तुमचे खाते आणि सर्व डेटा कायमचा नष्ट करण्याची विनंती करा.</string>
+    <string name="btn_delete_account_data">खाते आणि डेटा हटवण्याची विनंती करा</string>
+
+    <!-- Permission Center Screen -->
+    <string name="permission_center_desc">दृष्टी AI ला गतिशीलता सहाय्यासाठी हार्डवेअर परवानग्या आवश्यक असतात. सेन्सर्स केवळ सक्रिय वापरादरम्यानच चालू राहतात.</string>
+    <string name="perm_camera_title">कॅमेरा परवानगी</string>
+    <string name="perm_camera_purpose">अडथळे ओळखणे, खड्ड्यांचा इशारा आणि मजकूर वाचण्यासाठी वापर केला जातो. कोणताही फोटो सेव्ह केला जात नाही.</string>
+    <string name="perm_mic_title">मायक्रोफोन परवानगी</string>
+    <string name="perm_mic_purpose">व्हॉईस कमांड्स आणि आवाजाने ॲप सुरू करण्यासाठी वापर केला जातो. आवाज रेकॉर्ड केला जात नाही.</string>
+    <string name="perm_location_title">स्थान (GPS) परवानगी</string>
+    <string name="perm_location_purpose">पादचारी नेव्हिगेशन आणि आणीबाणीच्या (SOS) वेळी पालकांसोबत स्थान शेअर करण्यासाठी वापर केला जातो.</string>
+    <string name="perm_bluetooth_title">ब्लूटूथ परवानगी (पर्यायी)</string>
+    <string name="perm_bluetooth_purpose">पर्यायी स्मार्ट काठी जोडण्यासाठी. फोनवरून सामान्य वापरासाठी ही आवश्यक नाही.</string>
+    <string name="perm_granted">परवानगी मिळाली</string>
+    <string name="perm_not_granted">परवानगी मिळालेली नाही</string>
+    <string name="btn_grant_permission">परवानगी द्या</string>
+
+    <!-- Terms of Use Screen -->
+    <string name="terms_banner_title">वापराच्या अटी (आवृत्ती 2.0-2026)</string>
+    <string name="terms_banner_desc">कृपया दृष्टी AI वापरण्यापूर्वी या अटी काळजीपूर्वक वाचा. ॲप वापरून तुम्ही या अटींशी सहमत आहात.</string>
+    <string name="terms_sec1_title">1. सहाय्यक उद्दिष्ट आणि दायित्व मर्यादा</string>
+    <string name="terms_sec1_desc">दृष्टी AI हे एक सहाय्यक तांत्रिक साधन आहे. हे मानवी विवेक किंवा पारंपारिक पांढऱ्या काठीचा पर्याय नाही. कोणत्याही अनपेक्षित त्रुटी किंवा अपघातासाठी डेव्हलपर्स जबाबदार नाहीत.</string>
+    <string name="terms_sec2_title">2. आणीबाणी आणि SOS मर्यादा</string>
+    <string name="terms_sec2_desc">SOS अलर्ट्स मोबाईल नेटवर्क आणि बॅटरीवर अवलंबून असतात. गंभीर परिस्थितीत नेहमी थेट 112 वर संपर्क साधा.</string>
+    <string name="terms_sec3_title">3. पालक संबंध आणि संमती</string>
+    <string name="terms_sec3_desc">पालक जोडणी पेअरिंग कोडद्वारे परस्पर संमतीने होते. तुम्ही ही जोडणी सेटिंग्जमधून कधीही रद्द करू शकता.</string>
+
+    <!-- Emergency SOS Notice Screen -->
+    <string name="emergency_screen_title">आणीबाणी SOS माहिती</string>
+    <string name="emergency_banner_title">महत्त्वाच्या SOS क्षमता आणि मर्यादा</string>
+    <string name="emergency_point_1">SOS तुमच्या मंजूर पालकांना आणि आणीबाणीच्या संपर्कांना तुमचे थेट GPS स्थान पाठवते.</string>
+    <string name="emergency_point_2">SMS आणि इंटरनेट अलर्ट्स नेटवर्क कव्हरेज आणि बॅटरी पातळीवर अवलंबून असतात.</string>
+    <string name="emergency_point_3">दृष्टी AI हा अधिकृत आणीबाणी सेवांचा पर्याय नाही. जीवाच्या धोक्यात त्वरित 112 डायल करा.</string>
+    <string name="btn_call_112">राष्ट्रीय आणीबाणी सेवेला (112) कॉल करा</string>
+    <string name="btn_configure_contacts">आणीबाणीचे संपर्क सेट करा</string>
+
+    <!-- Security Center Screen -->
+    <string name="security_banner_title">पुरावा-आधारित सुरक्षा रचना</string>
+    <string name="security_banner_desc">दृष्टी AI भक्कम सुरक्षा तत्त्वांवर आधारित आहे: डेटाबेसमध्ये Row Level Security (RLS), फोनमध्ये एनक्रिप्टेड टोकन्स आणि कॅमेरा फ्रेम्सचे शून्य सर्व्हर स्टोरेज.</string>
+    <string name="security_feature_rls_title">डेटाबेस Row Level Security</string>
+    <string name="security_feature_rls_desc">प्रत्येक खाते केवळ स्वतःचाच डेटा पाहू शकते. इतर कोणताही वापरकर्ता तुमचा डेटा पाहू शकत नाही.</string>
+    <string name="security_feature_auth_title">सुरक्षित प्रमाणीकरण आणि पेअरिंग</string>
+    <string name="security_feature_auth_desc">पालक पेअरिंग कोड हा 6-अंकी सुरक्षित टोकन असून तो 15 मिनिटांत आपोआप नष्ट होतो.</string>
+    <string name="security_feature_local_title">स्थानिक सेन्सर गोपनीयता</string>
+    <string name="security_feature_local_desc">कॉम्प्युटर व्हिजन AI पूर्णपणे तुमच्या फोनवर काम करतो. कॅमेरा फ्रेम्स तुमच्या फोनबाहेर जात नाहीत.</string>
+
+    <!-- AI Transparency Screen -->
+    <string name="ai_transparency_header">सहाय्यक AI प्रणाली स्पष्टीकरण</string>
+    <string name="ai_transparency_desc">दृष्टी AI फोनवरील मशीन व्हिजन आणि आवाज ओळख एकत्र करते. प्रत्यक्षात वापरण्यापूर्वी त्याच्या मर्यादा समजून घेणे आवश्यक आहे.</string>
+    <string name="ai_limitations_title">ज्ञात AI आणि दृश्य मर्यादा</string>
+    <string name="ai_lim_false_positives">चुकीची ओळख: जमिनीवरील नक्षी किंवा सावलीला कधीकधी अडथळा समजले जाऊ शकते.</string>
+    <string name="ai_lim_missed_detections">ओळखण्यात चूक: पारदर्शक काचेचे दरवाजे किंवा बारीक लटकणाऱ्या तारा कधीकधी सुटू शकतात.</string>
+    <string name="ai_lim_lighting">प्रकाश: अंधारात किंवा प्रखर उजेडात कॅमेऱ्याची ओळख क्षमता कमी होते.</string>
+    <string name="ai_lim_voice">आवाज: जास्त आवाजात किंवा गोंगाटात आज्ञा पुन्हा देण्याची गरज पडू शकते.</string>
+
+    <!-- Incident & Vulnerability Reporting Screen -->
+    <string name="incident_screen_title">घटना किंवा सुरक्षा त्रुटी नोंदवा</string>
+    <string name="incident_type_standard">सर्वसामान्य घटना नोंदणी</string>
+    <string name="incident_type_vulnerability">सुरक्षा त्रुटी (Vulnerability) नोंदणी</string>
+    <string name="incident_category_label">घटनेचा प्रकार</string>
+    <string name="incident_desc_label">घटनेचे सविस्तर वर्णन</string>
+    <string name="incident_desc_hint">कृपया जागा, वातावरण किंवा समस्येचा सविस्तर तपशील द्या…</string>
+    <string name="incident_include_logs">निनावी तांत्रिक माहिती जोडा (फोन मॉडेल, OS आवृत्ती)</string>
+    <string name="btn_submit_report">तक्रार सबमिट करा</string>
+    <string name="report_submitted_success">अहवाल यशस्वीरीत्या सादर केला गेला. दृष्टी AI अधिक सुरक्षित बनवण्यासाठी धन्यवाद.</string>
+
+    <!-- Accessibility Notice Screen -->
+    <string name="accessibility_screen_header">सुलभता सूचना आणि मानके</string>
+    <string name="accessibility_screen_desc">दृष्टी AI दिव्यांग व्यक्ती हक्क कायदा (RPwD Act, 2016) आणि WCAG 2.1 AA मानके लक्षात घेऊन तयार केले आहे.</string>
+    <string name="acc_feature_talkback">TalkBack स्क्रीन रीडरसाठी सविस्तर लेबल्स आणि सुलभ नेव्हिगेशन.</string>
+    <string name="acc_feature_haptics">वळण, धोक्याची सूचना आणि पुष्टीकरणासाठी विशिष्ट कंपन पद्धती.</string>
+    <string name="acc_feature_multilingual">इंग्रजी, हिंदी आणि मराठीमध्ये पूर्ण बहुभाषिक सपोर्ट.</string>
+    <string name="acc_feature_touch">मोठे स्पर्श बटणे (किमान 48dp) आणि स्पष्ट उच्च-कॉन्ट्रास्ट रंग.</string>
+
+    <!-- General Navigation & Accessibility -->
+    <string name="nav_back">मागे जा</string>
+    <string name="desc_important_warning">महत्त्वाची चेतावणी</string>
+
+    <!-- Safety Notice Additions -->
+    <string name="safety_operational_caveats_title">कार्यप्रणाली सावधान्या आणि मर्यादा</string>
+
+    <!-- Privacy & Data Policy Additions -->
+    <string name="privacy_label_purpose">उद्देश: %1$s</string>
+    <string name="privacy_processing_retention_format">प्रक्रिया: %1$s • साठवणूक: %2$s</string>
+    <string name="privacy_data_account_cat">खाते माहिती (नाव, ईमेल)</string>
+    <string name="privacy_data_account_purpose">प्रमाणीकरण आणि प्रोफाइल व्यवस्थापन</string>
+    <string name="privacy_data_account_proc">एन्क्रिप्टेड Supabase Auth</string>
+    <string name="privacy_data_account_ret">खाते सक्रिय असेपर्यंत</string>
+    <string name="privacy_data_gps_cat">GPS स्थान</string>
+    <string name="privacy_data_gps_purpose">पादचारी नेव्हिगेशन आणि पालक SOS प्रसारण</string>
+    <string name="privacy_data_gps_proc">ऑन-डिव्हाइस + SOS प्रवाह</string>
+    <string name="privacy_data_gps_ret">अस्थायी / आणीबाणी सत्र कालावधी</string>
+    <string name="privacy_data_voice_cat">व्हॉईस इनपुट ऑडिओ</string>
+    <string name="privacy_data_voice_purpose">ऑफलाइन आज्ञा ओळख आणि वेक वर्ड</string>
+    <string name="privacy_data_voice_proc">100% ऑन-डिव्हाइस (Android Speech)</string>
+    <string name="privacy_data_voice_ret">शून्य ऑडिओ साठवणूक</string>
+    <string name="privacy_data_camera_cat">कॅमेरा व्हिडिओ फ्रेम्स</string>
+    <string name="privacy_data_camera_purpose">रिअल-टाइम अडथळे आणि खड्डे ओळखणे</string>
+    <string name="privacy_data_camera_proc">100% ऑन-डिव्हाइस (TFLite / MobileNet)</string>
+    <string name="privacy_data_camera_ret">शून्य फ्रेम रेकॉर्डिंग</string>
+    <string name="privacy_data_cane_cat">स्मार्ट काठी अंतर (पर्यायी / ॲक्सेसरी)</string>
+    <string name="privacy_data_cane_purpose">मिलीमीटर टक्कर जवळीक इशारा</string>
+    <string name="privacy_data_cane_proc">ESP32 BLE UART -> डिव्हाइस</string>
+    <string name="privacy_data_cane_ret">केवळ रिअल-टाइम कॅश</string>
+    <string name="privacy_data_guardian_cat">पालक संबंध</string>
+    <string name="privacy_data_guardian_purpose">पालक पेअरिंग आणि आणीबाणी अधिकृतता</string>
+    <string name="privacy_data_guardian_proc">Supabase RLS टेबल्स</string>
+    <string name="privacy_data_guardian_ret">सक्रिय पेअरिंग कालावधीपर्यंत</string>
+    <string name="privacy_data_telemetry_cat">डिव्हाइस टेलिमेट्री आणि बॅटरी</string>
+    <string name="privacy_data_telemetry_purpose">हार्डवेअर स्थिती आणि आणीबाणी पेलोड</string>
+    <string name="privacy_data_telemetry_proc">लोकल ब्रिज + SOS सत्र</string>
+    <string name="privacy_data_telemetry_ret">सत्र कालावधीपर्यंत</string>
+    <string name="privacy_right_access_title">प्रवेश</string>
+    <string name="privacy_right_correction_title">दुरुस्ती</string>
+    <string name="privacy_right_revocation_title">रद्द करणे</string>
+    <string name="privacy_right_erasure_title">हटवणे</string>
+    <string name="toast_export_data">स्थानिक डेटा सारांश डाउनलोड्स फोल्डरमध्ये पाठवला जात आहे…</string>
+    <string name="btn_export_data">डेटा एक्सपोर्ट करा</string>
+    <string name="btn_delete_account">खाते हटवा</string>
+    <string name="toast_delete_submitted">खाते हटवण्याची विनंती Supabase Auth कडे पाठवली गेली आहे.</string>
+    <string name="btn_confirm_deletion">हटवण्याची खात्री करा</string>
+
+    <!-- Permission Center Additions -->
+    <string name="perm_notif_title">सूचना (Notifications)</string>
+    <string name="perm_notif_purpose">महत्त्वाच्या सुरक्षा सूचना, पालक जोडणी अपडेट्स आणि आणीबाणी SOS प्रसारण पुष्टीकरणासाठी वापरले जाते.</string>
+    <string name="perm_optional">पर्यायी</string>
+
+    <!-- Emergency SOS Additions -->
+    <string name="emergency_capabilities_title">क्षमता आणि मर्यादा</string>
+    <string name="emergency_factor_guardian_title">पालक प्रसारण</string>
+    <string name="emergency_factor_network_title">मोबाईल नेटवर्क</string>
+    <string name="emergency_factor_dispatch_title">अधिकृत आणीबाणी सेवा</string>
+    <string name="emergency_actions_title">आणीबाणी कृती</string>
+    <string name="btn_test_sos_countdown">SOS आणि 5 सेकंदांचे काउंटडाउन तपासा</string>
+
+    <!-- AI Transparency Additions -->
+    <string name="ai_lim_false_positives_title">चुकीची ओळख (False Positives)</string>
+    <string name="ai_lim_missed_detections_title">ओळखण्यात चूक (Missed Detections)</string>
+    <string name="ai_lim_lighting_title">प्रकाश आणि प्रखर उजेड</string>
+    <string name="ai_lim_voice_title">आवाज ओळख</string>
+    <string name="ai_arch_title">मॉडेल आणि हार्डवेअर रचना</string>
+    <string name="ai_arch_vision_models_title">ऑन-डिव्हाइस मोबाईल व्हिजन मॉडेल्स:</string>
+    <string name="ai_arch_vision_models_desc">दृष्टी AI तुमच्या स्मार्टफोन प्रोसेसरवर स्थानिक पातळीवर चालणाऱ्या क्वांटाइझ्ड MobileNet आणि SSD न्यूरल मॉडेल्सचा वापर करते. सर्व निष्कर्ष क्लाउड अपलोडशिवाय मेमरीमध्ये होतात.</string>
+    <string name="ai_arch_cane_rule_title">पर्यायी भविष्यातील स्मार्ट काठी प्राधान्य नियम:</string>
+    <string name="ai_arch_cane_rule_desc">जेव्हा एखादी पर्यायी बाह्य स्मार्ट काठी जोडली जाते, तेव्हा जवळच्या अडथळ्यांसाठी तिचे थेट भौतिक मिलीमीटर वाचन कॅमेरा अंदाजांपेक्षा प्राधान्य घेते आणि त्वरित कंपन सुरू करते.</string>
+
+    <!-- Security Center Additions -->
+    <string name="security_controls_title">सखोल सुरक्षा नियंत्रणे</string>
+    <string name="security_feature_rls_item_title">PostgreSQL रो-लेव्हल सुरक्षा (RLS)</string>
+    <string name="security_feature_auth_item_title">क्रिप्टोग्राफिक पेअरिंग हँडशेक</string>
+    <string name="security_feature_local_item_title">ऑन-डिव्हाइस स्थानिक प्रक्रिया</string>
+    <string name="security_feature_tls_title">ट्रान्झिटमध्ये TLS 1.3 एन्क्रिप्शन</string>
+    <string name="security_feature_tls_desc">सर्व प्रमाणित API विनंत्या आणि डेटाबेस क्वेरींसाठी एंड-टू-एंड एन्क्रिप्शन.</string>
+    <string name="security_feature_revocation_title">एकतर्फी रद्द करणे</string>
+    <string name="security_feature_revocation_desc">मुख्य वापरकर्ता पालकांची जोडणी त्वरित प्रभावाने रद्द करू शकतो.</string>
+    <string name="security_vuln_reporting_title">सुरक्षा त्रुटी (Vulnerability) नोंदणी</string>
+
+    <!-- Terms of Use Additions -->
+    <string name="terms_accepted_on">स्वीकार केल्याची तारीख: %1$s</string>
+    <string name="toast_terms_acknowledged">वापराच्या अटी मान्य केल्या</string>
+    <string name="terms_agreement_checkbox">मी या वापराच्या अटी आणि सहाय्यक मर्यादा वाचल्या आहेत, समजून घेतल्या आहेत आणि मी त्यांच्याशी सहमत आहे.</string>
+
+    <!-- Accessibility Notice Additions -->
+    <string name="acc_assistive_tech_title">अंगभूत सहाय्यक तंत्रज्ञान</string>
+    <string name="acc_feature_talkback_title">TalkBack आणि स्क्रीन रीडर मार्गदर्शन</string>
+    <string name="acc_feature_haptics_title">दिशादर्शक आणि चेतावणी हॅप्टिक्स</string>
+    <string name="acc_feature_multilingual_title">बहुभाषिक सपोर्ट</string>
+    <string name="acc_feature_touch_title">उच्च कॉन्ट्रास्ट आणि टच टार्गेट मानके</string>
+    <string name="copied_to_clipboard">क्लिपबोर्डवर कॉपी केले</string>
+    <string name="home_try_saying">असे म्हणून पहा: \'%1$s\'</string>
+    <string name="home_try_saying_offline">असे म्हणून पहा: \'%1$s\' (ऑफलाइन)</string>
+    <string name="home_no_voice_suggestions">कोणत्याही व्हॉइस सूचना उपलब्ध नाहीत</string>
+    <string name="home_voice_suggestions_unavailable">व्हॉइस सूचना अनुपलब्ध आहेत</string>
+    <string name="home_default_suggest_describe">परिसराचे वर्णन करा</string>
+    <string name="home_default_suggest_navigate">रस्ता दाखवा</string>
+    <string name="camera_approx_meters">सुमारे %1$d मी</string>
+    <string name="camera_distance_uncertain">अंतर अनिश्चित</string>
+    <string name="camera_distance_unavailable">अंतर उपलब्ध नाही</string>
+    <string name="scan_point_camera_forward">कॅमेरा समोर धरा. दृष्टी AI रिअल टाइममध्ये तुमच्या मार्गाचे निरीक्षण करत आहे.</string>
+    <string name="scan_path_clear_badge">मार्ग मोकळा • समोरच्या कॉरिडॉरमध्ये कोणताही अडथळा नाही</string>
+    <string name="cane_status_offline">स्मार्ट काठी: ऑफलाइन</string>
+    <string name="cane_action_pair">जोडा</string>
+    <string name="cane_action_sim">सिम 45 सेमी</string>
+    <string name="cane_searching">काठी: शोधत आहे…</string>
+    <string name="cane_connecting">काठी: कनेक्ट करत आहे…</string>
+    <string name="cane_paired">काठी: जोडली गेली</string>
+    <string name="cane_disconnect">डिस्कनेक्ट करा</string>
+    <string name="cane_sim_off">सिम बंद</string>
+    <string name="cane_tof_active">काठी ToF: सक्रिय</string>
+    <string name="cane_tof_format">काठी ToF: %1$d सेमी %2$s</string>
+
+    <!-- Indoor / Outdoor Navigation Card -->
+    <string name="indoor_environment_label">परिसर</string>
+    <string name="indoor_floor_format">आत • मजला %1$d</string>
+    <string name="stairs_floor_format">पायऱ्या • मजला %1$d</string>
+    <string name="elevator_moving">लिफ्ट • सुरू आहे</string>
+    <string name="ground_floor_lobby">तळमजला लॉबी</string>
+    <string name="building_exit_reached">इमारतीचा बाहेर पडण्याचा मार्ग आला</string>
+    <string name="sidewalk_outdoors">फुटपाथ • बाहेर</string>
+    <string name="outdoor_gps_active">बाहेर • GPS सक्रिय</string>
+    <string name="roadway_crossing">रस्ता / क्रॉसिंग</string>
+    <string name="destination_reached">मुक्कामी पोहोचलात</string>
+    <string name="scanning_environment">परिसर स्कॅन करत आहे…</string>
+    <string name="status_confirmed">पुष्टी केली</string>
+    <string name="status_conf_format">%1$d%% खात्री</string>
+    <string name="speech_camera_eye_opened">कॅमेरा व्हिजन सुरू झाले.</string>
+    <string name="speech_camera_eye_closed">कॅमेरा व्हिजन बंद झाले.</string>
+    <string name="desc_camera_vision_active">कॅमेरा व्हिजन सक्रिय आहे. लपवण्यासाठी टॅप करा.</string>
+    <string name="desc_open_camera_vision">कॅमेरा व्हिजन उघडा.</string>
+    <string name="stairs_detected">पायऱ्या आढळल्या</string>
+    <string name="stairs_up_format">↑ वर • अंदाजे %1$d पायऱ्या</string>
+    <string name="stairs_down_format">↓ खाली • अंदाजे %1$d पायऱ्या</string>
+    <string name="total_walking_steps_format">एकूण चाललेली पावले: %1$d</string>
+    <string name="repeat_instruction">सूचना पुन्हा ऐका</string>
+    <string name="building_exit_reached_btn">बाहेर पडण्याचा मार्ग आला • बाहेरील GPS सुरू करा</string>
+    <string name="camera_eye_active_btn">कॅमेरा व्हिजन सुरू • बंद करण्यासाठी टॅप करा</string>
+    <string name="open_camera_eye_btn">कॅमेरा व्हिजन उघडा • दृश्य मार्गदर्शन</string>
+    <string name="confirm_floor_btn_format">मजला %1$d पुष्टी करा</string>
+    <string name="speech_floor_confirmed_format">मजला %1$d ची पुष्टी झाली.</string>
+    <string name="btn_done">पूर्ण</string>
+    <string name="btn_change_floor">मजला बदला</string>
+    <string name="btn_im_outside">मी बाहेर आहे</string>
+    <string name="speech_set_floor_format">मजला %1$d वर सेट केले.</string>
+    <string name="indoor_guidance_semantics_format">इमारत परिसर मार्गदर्शन: %1$s, मजला %2$d</string>
+
+    <!-- Camera Preview HUD -->
+    <string name="camera_hud_scanning">परिसर स्कॅन करत आहे…</string>
+    <string name="camera_hud_close">कॅमेरा बंद करा</string>
+    <string name="camera_hud_repeat">आवाज पुन्हा ऐका</string>
+    <string name="camera_hud_semantics_format">कॅमेरा व्हिजन HUD: %1$s</string>
+    <string name="camera_hud_scanning_short">स्कॅनिंग</string>
+
+    <!-- Target Types -->
+    <string name="target_door">दरवाजा</string>
+    <string name="target_stairs">पायऱ्या</string>
+    <string name="target_corridor">कॉरिडॉर</string>
+    <string name="target_building_exit">इमारत बाहेर पडण्याचा मार्ग</string>
+    <string name="target_elevator">लिफ्ट</string>
+    <string name="target_entrance">प्रवेशद्वार</string>
+    <string name="target_sidewalk">फुटपाथ</string>
+    <string name="target_road">रस्ता</string>
+    <string name="target_person">व्यक्ती</string>
+    <string name="target_vehicle">वाहन</string>
+    <string name="target_obstacle">अडथळा</string>
+    <string name="target_wall">भिंत</string>
+    <string name="target_unknown">अज्ञात</string>
+
+    <!-- Spatial Directions -->
+    <string name="dir_ahead">समोर</string>
+    <string name="dir_slightly_left">किंचित डावीकडे</string>
+    <string name="dir_slightly_right">किंचित उजवीकडे</string>
+    <string name="dir_on_your_left">डाव्या बाजूला</string>
+    <string name="dir_on_your_right">उजव्या बाजूला</string>
+
+    <!-- Navigation Screen -->
+    <string name="nav_gps_active">Google GPS सक्रिय</string>
+    <string name="nav_gps_unavailable">GPS अनुपलब्ध</string>
+    <string name="nav_search_placeholder">गंतव्य शोधा…</string>
+    <string name="nav_search_desc">गंतव्य, ठिकाण किंवा पत्ता शोधा</string>
+    <string name="nav_clear_search">शोध पुसा</string>
+    <string name="nav_voice_input">व्हॉईस इनपुट</string>
+    <string name="nav_voice_input_desc">गंतव्य बोलण्यासाठी टॅप करा</string>
+    <string name="cat_hospitals">रुग्णालये</string>
+    <string name="cat_pharmacies">औषध दुकाने</string>
+    <string name="cat_atms">एटीएम (ATM)</string>
+    <string name="cat_restaurants">हॉटेल्स/उपहारगृहे</string>
+    <string name="cat_petrol_pumps">पेट्रोल पंप</string>
+    <string name="cat_police_station">पोलीस ठाणे</string>
+    <string name="nav_map_type">नकाशा प्रकार</string>
+    <string name="nav_map_type_desc">सॅटेलाइट किंवा सामान्य दृश्य बदला</string>
+    <string name="nav_my_location">माझे स्थान</string>
+    <string name="nav_recenter_desc">वर्तमान GPS स्थानावर केंद्रित करा</string>
+    <string name="nav_nearby_places_format">जवळपासची Google ठिकाणे (%1$d)</string>
+    <string name="nav_accessible_title">सुलभ Google नेव्हिगेशन</string>
+    <string name="nav_accessible_subtitle">टर्न-बाय-टर्न आवाज आणि कंपन मार्गदर्शनासह थेट Google मार्ग शोधण्यासाठी वर कोणतेही गंतव्य बोला किंवा टाइप करा.</string>
+    <string name="mode_walk">चालत</string>
+    <string name="mode_drive">गाडीने</string>
+    <string name="mode_two_wheeler">दुचाकी</string>
+    <string name="nav_route_metrics_format">%1$d मीटर • %2$d पावले</string>
+    <string name="nav_save_place">ठिकाण खात्यात सेव्ह करा</string>
+    <string name="nav_start_indoor_guidance">बाहेर पडण्याचे मार्गदर्शन सुरू करा</string>
+    <string name="nav_start_navigation">नेव्हिगेशन सुरू करा</string>
+    <string name="nav_stop">थांबवा</string>
+    <string name="nav_remaining_distance_format">%1$d मीटर शिल्लक</string>
+    <string name="nav_eta_format">वेळ: %1$d मिनिटे • %2$s पर्यंत</string>
+    <string name="nav_repeat_heading_desc">सूचना आणि दिशा पुन्हा ऐका</string>
+    <string name="nav_maneuver_distance_format">%1$d मीटरमध्ये</string>
+    <string name="nav_heading_format">दिशा %1$d° • लक्ष्य %2$s</string>
+    <string name="nav_aligned_proceed">मार्गाशी सुसंगत • सरळ पुढे चला</string>
+    <string name="nav_turn_towards_format">%1$s वळा (%2$s)</string>
+    <string name="nav_search_on_way">वाटेत शोधा</string>
+    <string name="nav_arrived_title">तुम्ही पोहोचलात!</string>
+    <string name="nav_arrived_desc_format">%1$s येथे यशस्वीरित्या पोहोचलात.</string>
+    <string name="nav_new_search">नवीन शोध</string>
+    <string name="nav_then_format">नंतर %1$s</string>
+    <string name="nav_compass_north_up">हेड-अप 3D नेव्हिगेशनवर स्विच करा</string>
+    <string name="nav_compass_head_up">नॉर्थ-अप 2D दृश्यावर स्विच करा</string>
+    <string name="nav_your_location">तुमचे स्थान</string>
+    <string name="nav_gps_live_tracking">GPS थेट ट्रॅकिंग</string>
+    <string name="nav_places_away_format">%1$d मीटर अंतरावर</string>
+    <string name="nav_searching_places_format">\"%1$s\" साठी Google ठिकाणे शोधत आहे…</string>
+    <string name="nav_no_places_format">\"%1$s\" साठी कोणतेही ठिकाण सापडले नाही.</string>
+    <string name="nav_directions">दिशानिर्देश</string>
+    <string name="nav_recenter">पुन्हा केंद्रित करा</string>
+    <string name="nav_trip_info">प्रवासाची माहिती</string>
+    <string name="nav_voice_guidance">आवाज मार्गदर्शन</string>
+    <string name="nav_route_overview">मार्ग विहंगावलोकन</string>
+    <string name="nav_obstacle_ahead">पुढे अडथळा आहे</string>
+    <string name="nav_preview_steps">पायऱ्या पहा</string>
+    <string name="nav_open_maps">गुगल मॅप्समध्ये उघडा</string>
+    <string name="nav_done">पूर्ण</string>
+    <string name="nav_start_new">नवीन नेव्हिगेशन सुरू करा</string>
+
+    <!-- Home Screen -->
+    <string name="home_how_can_help">मी कशी मदत करू शकतो?</string>
+    <string name="home_telemetry_unverified">● टेलिमेट्री अप्रमाणित</string>
+    <string name="home_action_scan">स्कॅन</string>
+    <string name="home_action_navigate">नेव्हिगेट</string>
+    <string name="home_action_nearby">जवळपास</string>
+    <string name="home_action_describe">वर्णन</string>
+    <string name="voice_listening">ऐकत आहे…</string>
+    <string name="voice_processing_format">प्रक्रिया करत आहे: \"%1$s\"</string>
+    <string name="voice_searching_nearby_format">जवळपास %1$s शोधत आहे…</string>
+    <string name="voice_no_suggestions">कोणतीही व्हॉईस सूचना उपलब्ध नाही</string>
+    <string name="voice_try_saying_format">असे म्हणून पहा: \'%1$s\'</string>
+    <string name="topbar_subtitle">AI व्हिजन सहाय्यक</string>
+
+    <!-- Scan Screen -->
+    <string name="scan_camera_active">● कॅमेरा सक्रिय</string>
+    <string name="scan_processing_scene">● दृश्य प्रक्रिया करत आहे</string>
+    <string name="scan_listening">🎤 ऐकत आहे…</string>
+    <string name="scan_searching_view">🔍 कॅमेरा दृश्यात शोधत आहे…</string>
+    <string name="scan_target_found">🎯 लक्ष्य सापडले</string>
+    <string name="scan_target_not_in_view">⚠️ लक्ष्य दृश्यात नाही</string>
+    <string name="scan_path_clear">रस्ता मोकळा आहे</string>
+    <string name="scan_path_obstructed">रस्त्यात अडथळा आहे</string>
+    <string name="scan_check_path">रस्ता तपासा</string>
+    <string name="scan_surroundings">आजूबाजूचा परिसर</string>
+    <string name="scan_find_target">लक्ष्य शोधा</string>
+    <string name="scan_mode_assist">सहाय्य</string>
+    <string name="scan_mode_read">वाचा</string>
+    <string name="scan_mode_describe">वर्णन</string>
+    <string name="scan_mode_summarize">सारांश</string>
+    <string name="scan_mode_translate">भाषांतर</string>
+    <string name="scan_btn_check_path">रस्त्याची स्थिती तपासा</string>
+    <string name="scan_btn_scan_now_format">● आता स्कॅन करा (%1$s)</string>
+    <string name="scan_mobility_output_format">हालचाल निष्कर्ष (%1$s)</string>
+    <string name="scan_read_aloud">निष्कर्ष ऐका</string>
+    <string name="scan_copy_text">मजकूर कॉपी करा</string>
+
+    <!-- Describe Screen -->
+    <string name="describe_ai_active">GEMINI AI 1.5 FLASH सक्रिय</string>
+    <string name="describe_title">दृष्टी AI दृश्य समज</string>
+    <string name="describe_repeat_audio">ऑडिओ पुन्हा ऐका</string>
+    <string name="describe_rescan">पुन्हा स्कॅन करा</string>
+    <string name="describe_initializing">कॅमेरा आणि AI व्हिजन सुरू होत आहे…</string>
+    <string name="describe_analyzing">Gemini AI द्वारे आजूबाजूच्या परिसराचे विश्लेषण करत आहे…</string>
+
+    <!-- Nearby Screen -->
+    <string name="nearby_title">जवळपासची महत्त्वाची ठिकाणे</string>
+    <string name="nearby_subtitle">GPS आणि वास्तविक स्थानाद्वारे शोध</string>
+    <string name="nearby_empty">या श्रेणीत कोणतीही ठिकाणे सापडली नाहीत.</string>
+    <string name="cat_railway_stations">रेल्वे स्टेशन</string>
+    <string name="cat_bus_stops">बस स्टॉप</string>
+
+    <!-- Emergency Screen -->
+    <string name="sos_title_standby">आणीबाणी सहाय्य</string>
+    <string name="sos_title_countdown_format">SOS उलटी गिनती: %1$d सेकंद</string>
+    <string name="sos_title_active">आणीबाणी SOS सक्रिय</string>
+    <string name="sos_desc_countdown">टायमर संपल्यावर पालकांना थेट GPS आणि अंतर पाठवले जाईल.</string>
+    <string name="sos_desc_active">मंजूर पालकांना थेट GPS, काठीचे अंतर आणि बॅटरी स्थिती पाठवली जात आहे.</string>
+    <string name="sos_desc_standby">आणीबाणी प्रसारण सुरू करण्यासाठी खालील बटण दाबा किंवा थेट 112 वर कॉल करा.</string>
+    <string name="sos_telemetry_title">पालक SOS टेलिमेट्री</string>
+    <string name="sos_btn_broadcast_now">त्वरित प्रसारित करा</string>
+    <string name="sos_btn_cancel_countdown">उलटी गिनती रद्द करा (चुकून दाबली गेली)</string>
+    <string name="sos_btn_resolve">मी सुरक्षित आहे (SOS बंद करा)</string>
+    <string name="sos_btn_control_room">पूर्ण SOS नियंत्रण कक्ष उघडा</string>
+    <string name="sos_btn_trigger">आणीबाणी SOS सुरू करा</string>
+    <string name="sos_btn_call_112">112 वर कॉल करा (पोलीस / वैद्यकीय)</string>
+
+    <!-- Auth Screens -->
+    <string name="auth_drishti_brand_prefix">दृष्टी-</string>
+    <string name="auth_drishti_brand_suffix">AI</string>
+    <string name="auth_drishti_subtitle">AI व्हिजन आणि गतिशीलता सहाय्यक</string>
+    <string name="auth_choose_role">तुमची भूमिका निवडा</string>
+    <string name="auth_choose_role_prefix">तुमची </string>
+    <string name="auth_choose_role_suffix">भूमिका निवडा</string>
+    <string name="auth_choose_role_desc">योग्य साइन-इन अनुभव मिळवण्यासाठी तुम्ही दृष्टी AI चा कसा वापर करणार ते निवडा.</string>
+    <string name="auth_role_embedded_title">मुख्य वापरकर्ता</string>
+    <string name="auth_role_embedded_desc">दृष्टिबाधित व्यक्तींसाठी व्हॉईस सहाय्य, अडथळा शोध आणि नेव्हिगेशन.</string>
+    <string name="auth_role_parent_title">पालक / कुटुंब</string>
+    <string name="auth_role_parent_desc">सुरक्षा प्राधान्ये आणि जोडलेल्या वापरकर्त्यांवर लक्ष ठेवण्यासाठी.</string>
+    <string name="auth_new_to_drishti">दृष्टी AI वर नवीन आहात?</string>
+    <string name="auth_btn_embedded_signup">मुख्य वापरकर्ता साइन अप</string>
+    <string name="auth_btn_parent_signup">पालक साइन अप</string>
+    <string name="auth_security_note">सुरक्षित Supabase प्रमाणीकरण • HTTPS/TLS एन्क्रिप्शन</string>
+    <string name="auth_safety_privacy_btn">सुरक्षा खुलासे आणि गोपनीयता सूचना</string>
+
+    <!-- Sign In / Sign Up Form Strings -->
+    <string name="auth_badge_embedded_user">मुख्य वापरकर्ता</string>
+    <string name="auth_badge_parent_guardian">पालक / कुटुंब</string>
+    <string name="auth_badge_embedded_signup">मुख्य वापरकर्ता साइन अप</string>
+    <string name="auth_badge_parent_signup">पालक साइन अप</string>
+    <string name="auth_welcome_prefix">परत आल्याबद्दल </string>
+    <string name="auth_welcome_suffix">स्वागत आहे</string>
+    <string name="auth_create_account_prefix">तुमचे खाते </string>
+    <string name="auth_create_account_suffix">तयार करा</string>
+    <string name="auth_embedded_signin_desc">तुमच्या सहाय्यक व्हिजन आणि नेव्हिगेशन सिस्टीममध्ये प्रवेश करण्यासाठी साइन इन करा.</string>
+    <string name="auth_parent_signin_desc">आपत्कालीन संपर्कांचे व्यवस्थापन करण्यासाठी आणि सुरक्षा प्राधान्ये पाहण्यासाठी साइन इन करा.</string>
+    <string name="auth_embedded_signup_desc">पुढे जाण्यासाठी तुमचे दृष्टी AI खाते तयार करा.</string>
+    <string name="auth_parent_signup_desc">पुढे जाण्यासाठी तुमचे दृष्टी AI खाते तयार करा.</string>
+    <string name="auth_label_full_name">पूर्ण नाव</string>
+    <string name="auth_label_email">ईमेल पत्ता</string>
+    <string name="auth_label_parent_email">पालकांचा ईमेल पत्ता</string>
+    <string name="auth_label_phone_optional">फोन नंबर (पर्यायी)</string>
+    <string name="auth_label_preferred_language">पसंतीची भाषा</string>
+    <string name="auth_label_password">पासवर्ड</string>
+    <string name="auth_label_password_rules">पासवर्ड (किमान 8 अक्षरे, अक्षर आणि अंक)</string>
+    <string name="auth_label_confirm_password">पासवर्डची पुष्टी करा</string>
+    <string name="auth_placeholder_email">name@example.com</string>
+    <string name="auth_placeholder_parent_email">parent@example.com</string>
+    <string name="auth_placeholder_phone">+91 9876543210</string>
+    <string name="auth_placeholder_name">राहुल जोशी</string>
+    <string name="auth_btn_forgot_password">पासवर्ड विसरलात?</string>
+    <string name="auth_btn_signin">साइन इन करा</string>
+    <string name="auth_btn_signin_as_parent">पालक म्हणून साइन इन करा</string>
+    <string name="auth_btn_create_account">खाते तयार करा</string>
+    <string name="auth_btn_switch_role">भूमिका बदला</string>
+    <string name="auth_dont_have_account">खाते नाही का?</string>
+    <string name="auth_new_guardian">नवीन पालक आहात?</string>
+    <string name="auth_already_have_account">आधीच खाते आहे का?</string>
+    <string name="auth_sec_emergency_contact">आपत्कालीन संपर्क</string>
+    <string name="auth_sec_emergency_contact_sub">आपत्कालीन/SOS वैशिष्ट्यांसाठी आवश्यक</string>
+    <string name="auth_label_emergency_name">संपर्काचे नाव</string>
+    <string name="auth_label_emergency_phone">संपर्काचा फोन</string>
+    <string name="auth_placeholder_emergency_name">प्राथमिक संपर्काचे नाव</string>
+
+    <!-- Permission Onboarding Strings -->
+    <string name="perm_onboarding_granted_format">✓ %1$s परवानगी मंजूर</string>
+    <string name="perm_onboarding_open_settings">परवानगी देण्यासाठी सेटिंग्ज उघडा</string>
+    <string name="perm_onboarding_grant_format">%1$s परवानगी द्या</string>
+    <string name="perm_onboarding_grant_optional_format">%1$s परवानगी द्या (पर्यायी)</string>
+    <string name="perm_onboarding_denied_warning">परवानगी नाकारली गेली होती. कृपया ती सुरू करण्यासाठी \'सेटिंग्ज उघडा\' वर टॅप करा.</string>
+    <string name="perm_onboarding_needed_warning">सहाय्यक वैशिष्ट्यांसाठी ही परवानगी आवश्यक आहे. पुढे जाण्यासाठी \'परवानगी द्या\' वर टॅप करा.</string>
+    <string name="perm_onboarding_how_it_works">दृष्टी AI याचा कसा वापर करते</string>
+    <string name="perm_onboarding_privacy_title">गोपनीयता आणि परवानगी</string>
+    <string name="perm_onboarding_back">मागे</string>
+    <string name="perm_onboarding_next">पुढे</string>
+    <string name="perm_onboarding_complete">प्रक्रिया पूर्ण करा</string>
+
+    <!-- 12 Permission Item Translations -->
+    <string name="perm_cat_microphone">मायक्रोफोन परवानगी</string>
+    <string name="perm_title_microphone">मायक्रोफोन ॲक्सेस</string>
+    <string name="perm_desc_microphone">आवाज सक्रिय असताना दृष्टी AI ला तुमचे व्हॉईस कमांड्स, प्रश्न आणि सहाय्यक सूचना ऐकण्याची अनुमती देते.</string>
+
+    <string name="perm_cat_camera">कॅमेरा परवानगी</string>
+    <string name="perm_title_camera">कॅमेरा ॲक्सेस</string>
+    <string name="perm_desc_camera">दृष्टी AI च्या कॉम्प्युटर व्हिजनला रिअल-टाइम अडथळे ओळखणे, मजकूर वाचणे आणि परिसराचे वर्णन करण्याची अनुमती देते.</string>
+
+    <string name="perm_cat_fine_location">अचूक स्थान परवानगी</string>
+    <string name="perm_title_fine_location">अचूक स्थान ॲक्सेस</string>
+    <string name="perm_desc_fine_location">अचूक पायी चालण्याचे दिशा-निर्देश, विशिष्ट इमारतींचे प्रवेशद्वार शोधणे आणि आपत्कालीन GPS स्थान प्रदान करते.</string>
+
+    <string name="perm_cat_coarse_location">अंदाजे स्थान परवानगी</string>
+    <string name="perm_title_coarse_location">अंदाजे स्थान ॲक्सेस</string>
+    <string name="perm_desc_coarse_location">बॅटरी वाचवून दृष्टी AI ला परिसरातील रुग्णालये, बस स्टॉप आणि आवश्यक सेवा शोधण्याची अनुमती देते.</string>
+
+    <string name="perm_cat_phone_state">फोन स्थिती परवानगी</string>
+    <string name="perm_title_phone_state">फोन स्थिती ॲक्सेस</string>
+    <string name="perm_desc_phone_state">येणारे कॉल्स त्वरित ओळखते जेणेकरून दृष्टी AI तुम्हाला सावध करू शकेल आणि कॉल करणाऱ्याचे नाव वाचून दाखवू शकेल.</string>
+
+    <string name="perm_cat_answer_calls">कॉल नियंत्रण परवानगी</string>
+    <string name="perm_title_answer_calls">कॉल उत्तर ॲक्सेस</string>
+    <string name="perm_desc_answer_calls">दृष्टी AI ला तुमच्या व्हॉईस कमांडवर येणारे फोन कॉल्स उचलण्याची किंवा नाकारण्याची अनुमती देते.</string>
+
+    <string name="perm_cat_call_phone">थेट कॉलिंग परवानगी</string>
+    <string name="perm_title_call_phone">थेट कॉल ॲक्सेस</string>
+    <string name="perm_desc_call_phone">दृष्टी AI ला 112 आपत्कालीन क्रमांक किंवा तुमच्या पालकांना व्हॉईस आदेशावरून थेट कॉल करण्यास सक्षम करते.</string>
+
+    <string name="perm_cat_contacts">संपर्क (Contacts) परवानगी</string>
+    <string name="perm_title_contacts">संपर्क ॲक्सेस</string>
+    <string name="perm_desc_contacts">दृष्टी AI ला तुमची फोन संपर्क यादी पाहण्याची अनुमती देते जेणेकरून येणाऱ्या कॉलमध्ये नंबरऐवजी नाव उच्चारले जाईल.</string>
+
+    <string name="perm_cat_call_log">कॉल लॉग परवानगी</string>
+    <string name="perm_title_call_log">कॉल लॉग ॲक्सेस</string>
+    <string name="perm_desc_call_log">दूरसंचार ऑपरेटरकडून नंबर येण्यास उशीर झाल्यास कॉल करणाऱ्या व्यक्तीची ओळख पटवण्यासाठी मदत करते.</string>
+
+    <string name="perm_cat_bluetooth_scan">ब्लूटूथ स्कॅनिंग परवानगी</string>
+    <string name="perm_title_bluetooth_scan">ब्लूटूथ स्कॅनिंग ॲक्सेस</string>
+    <string name="perm_desc_bluetooth_scan">जवळपास उपलब्ध असलेल्या ESP32 स्मार्ट काठी आणि बाह्य सेन्सर हार्डवेअरचा शोध घेते.</string>
+
+    <string name="perm_cat_bluetooth_connect">ब्लूटूथ कनेक्शन परवानगी</string>
+    <string name="perm_title_bluetooth_connect">ब्लूटूथ कनेक्ट ॲक्सेस</string>
+    <string name="perm_desc_bluetooth_connect">स्मार्ट काठीवरून अडथळ्यांच्या अंतराचा रिअल-टाइम डेटा मिळवण्यासाठी आणि हँडलवर कंपन सूचना पाठवण्यासाठी कनेक्ट करते.</string>
+
+    <string name="perm_cat_notifications">सूचना (Notifications) परवानगी</string>
+    <string name="perm_title_notifications">सूचना ॲक्सेस</string>
+    <string name="perm_desc_notifications">बॅकग्राउंडमध्ये व्हॉईस सेवा, कॉल नियंत्रणे आणि आपत्कालीन स्थितीच्या सूचना सतत चालू ठेवते.</string>
+    <string name="home_greeting_hello">नमस्कार,</string>
+    <string name="home_greeting_ask_me">विचारा </string>
+    <string name="home_greeting_anything_you_need">तुम्हाला जे हवे ते</string>
+    <string name="home_try_saying_prefix">असे म्हणून पहा: </string>
+
+    <!-- Offline Maps -->
+    <string name="offline_maps_title">ऑफलाइन नकाशे</string>
+    <string name="offline_maps_download_city">शहर डाउनलोड करा</string>
+    <string name="offline_maps_search_placeholder">शहर शोधा (उदा. पुणे)</string>
+    <string name="offline_maps_btn_download">डाउनलोड करा</string>
+    <string name="offline_maps_downloaded_title">डाउनलोड केलेले नकाशे</string>
+    <string name="offline_maps_empty">अजून कोणतेही नकाशे डाउनलोड केलेले नाहीत.</string>
+    <string name="offline_maps_available_fmt">%1$d%% - ऑफलाइन उपलब्ध</string>
+    <string name="offline_maps_size_estimate">नकाशा आकार: ~150 MB</string>
+
+    <!-- Parent Settings -->
+    <string name="parent_settings_title">पालक सेटिंग्ज</string>
+    <string name="parent_account_details">खाते तपशील</string>
+    <string name="parent_account_fallback">पालक खाते</string>
+    <string name="parent_role_label">भूमिका: पालक / पालक</string>
+    <string name="parent_nav_pairing_title">पालक पेअरिंग</string>
+    <string name="parent_nav_pairing_sub">जोडलेली दृष्टी AI उपकरणे लिंक आणि व्यवस्थापित करा</string>
+    <string name="parent_nav_connected_users_title">जोडलेले वापरकर्ते</string>
+    <string name="parent_nav_connected_users_sub">%1$d मंजूर जोडलेले वापरकर्ते</string>
+    <string name="parent_nav_privacy_title">गोपनीयता आणि आरएलएस सुरक्षा</string>
+    <string name="parent_nav_privacy_sub">डेटा ॲक्सेस केवळ मंजूर पालक संबंधापर्यंत मर्यादित आहे</string>
+    <string name="parent_about_title">दृष्टी AI बद्दल</string>
+    <string name="parent_about_sub">सहाय्यक दृष्टी आणि नेव्हिगेशन प्लॅटफॉर्म</string>
+    <string name="parent_about_version">आवृत्ती %1$s</string>
+    <string name="parent_btn_sign_out">पालक पोर्टलवरून साइन आउट करा</string>
+    <string name="parent_privacy_dialog_title">गोपनीयता आणि सुरक्षा आर्किटेक्चर</string>
+    <string name="parent_privacy_p1">• सुपाबेस रो लेव्हल सिक्युरिटी (RLS) डेटाबेस स्तरावर लागू आहे. पालक केवळ त्या मुलांची टेलीमेट्री आणि एसओएस सत्रे पाहू शकतात ज्यांचे पेअरिंग संबंध \'APPROVED\' स्थितीत आहे.</string>
+    <string name="parent_privacy_p2">• वापरकर्त्यांचे पूर्ण नियंत्रण आहे: दृष्टी चाईल्ड ॲपवरून पेअरिंग त्वरित रद्द केले जाऊ शकते.</string>
+    <string name="parent_privacy_p3">• डिव्हाइस स्पीच, हॅप्टिक सेटिंग्ज आणि आपत्कालीन संपर्क सुरक्षित स्थानिक एन्क्रिप्टेड स्टोरेजमध्ये राहतात.</string>
+    <string name="btn_understood">समजले</string>
+    <string name="parent_sign_out_confirm_msg">तुम्हाला नक्की पालक पोर्टलवरून साइन आउट करायचे आहे का?</string>
+
+    <!-- Settings Emergency Contact & Assistant Details -->
+    <string name="edit_emergency_contact_title">आपत्कालीन संपर्क संपादित करा</string>
+    <string name="contact_name_label">संपर्काचे नाव</string>
+    <string name="phone_number_label">फोन नंबर</string>
+    <string name="btn_saving">सेव्ह करत आहे…</string>
+    <string name="btn_save">सेव्ह करा</string>
+    <string name="btn_edit">संपादित करा</string>
+    <string name="asst_refresh_status">स्थिती रिफ्रेश करा</string>
+    <string name="asst_capability_sub">या उपकरणासाठी थेट हार्डवेअर आणि फ्रेमवर्क क्षमता अहवाल:</string>
+    <string name="asst_default_active">डीफॉल्ट सहाय्यक सक्रिय</string>
+    <string name="asst_default_active_exp">दृष्टी ही डीफॉल्ट डिजिटल सहाय्यक म्हणून निवडली आहे</string>
+    <string name="asst_default_inactive_exp">दृष्टी सध्या डीफॉल्ट सहाय्यक म्हणून सेट नाही</string>
+    <string name="asst_voice_interaction">व्हॉइस इंटरॅक्शन सेवा</string>
+    <string name="asst_voice_interaction_exp">दृष्टी व्हॉइस इंटरॅक्शन सर्व्हिस फ्रेमवर्क नोंदणी</string>
+    <string name="asst_system_assistant">सिस्टम सहाय्यक</string>
+    <string name="asst_system_assistant_exp">अँड्रॉइड व्हॉइस इनपुट सेटिंग्ज आणि असिस्ट सपोर्ट</string>
+    <string name="asst_hardware_dsp">हार्डवेअर डीएसपी हॉटवर्ड</string>
+    <string name="asst_hardware_dsp_avail_exp">हार्डवेअर कमी-पॉवर आवाज ट्रिगर उपलब्ध</string>
+    <string name="asst_hardware_dsp_unavail_exp">ओईएम/सिस्टम डीएसपी हॉटवर्ड सपोर्ट आवश्यक आहे</string>
+    <string name="asst_app_wakeword">ॲप्लिकेशन वेक वर्ड</string>
+    <string name="asst_app_wakeword_exp">ॲप-स्तरीय ऑडिओ प्रक्रियेद्वारे \"हे दृष्टी\"</string>
+    <string name="asst_on_device_rec">ऑन-डिव्हाइस ओळख</string>
+    <string name="asst_on_device_avail_exp">स्थानिक ऑन-डिव्हाइस व्हॉइस मॉडेल उपलब्ध आहेत</string>
+    <string name="asst_on_device_unavail_exp">ऑन-डिव्हाइस स्पीच ओळखकर्ता अनुपलब्ध आहे</string>
+    <string name="asst_btn_set_assistant">दृष्टीला सहाय्यक म्हणून सेट करा</string>
+    <string name="asst_btn_manage_settings">सहाय्यक सेटिंग्ज व्यवस्थापित करा</string>
+    <string name="asst_btn_enable_hands_free">हँड्स-फ्री सक्षम करा</string>
+    <string name="asst_active_engine">सक्रिय ओळख इंजिन</string>
+    <string name="asst_status_active">सक्रिय</string>
+    <string name="asst_status_inactive">निष्क्रिय</string>
+    <string name="asst_status_available">उपलब्ध</string>
+    <string name="asst_status_unavailable">अनुपलब्ध</string>
+    <string name="asst_status_unsupported">असमर्थित</string>
+
+    <!-- Scan Screen Modes & Controls -->
+    <string name="scan_mode_path">रस्ता</string>
+    <string name="scan_btn_pair_stream">पेअर / स्ट्रीम</string>
+    <string name="scan_connecting_stream">ESP32-CAM प्रवाहासह जोडणी करत आहे…</string>
+    <string name="scan_start_stream">ESP32 प्रवाह सुरू करा</string>
+    <string name="scan_stream_disconnected">ESP32-CAM प्रवाह खंडित झाला</string>
+    <string name="scan_capture">कॅप्चर / स्कॅन</string>
+    <string name="scan_toggle_flash">फ्लॅशलाइट टॉगल करा</string>
+    <string name="scan_switch_camera">कॅमेरा स्रोत बदला</string>
+    <string name="scan_live_feed_desc">थेट ESP32-CAM व्हिडिओ फीड</string>
+
+    <!-- Emergency Screen & Telemetry -->
+    <string name="sos_status_standby">स्थिती: स्टँडबाय • कोणतेही सक्रिय अलर्ट नाहीत</string>
+    <string name="sos_status_active_fmt">स्थिती: सक्रिय • सावध केलेले पालक: %1$d</string>
+    <string name="sos_countdown_starting_fmt">%1$d सेकंदात सत्र सुरू होत आहे…</string>
+    <string name="sos_btn_call_contact_fmt">%1$s यांना कॉल करा: %2$s</string>
+    <string name="sos_call_emergency_contact">आपत्कालीन संपर्क</string>
+
+    <!-- Guardian Pairing Dialogs -->
+    <string name="revoke_pairing_title">पेअरिंग रद्द करा</string>
+    <string name="revoke_pairing_confirm_msg">तुम्हाला नक्की हे पेअरिंग संबंध रद्द करायचे आहे का? पुन्हा पेअर होईपर्यंत तुम्ही टेलीमेट्री आणि अलर्टचा ॲक्सेस गमवाल.</string>
+    <string name="btn_revoke">रद्द करा</string>
+
+    <!-- Connection Rows -->
+    <string name="conn_phone">फोन</string>
+    <string name="conn_smart_cane">स्मार्ट केन</string>
+    <string name="conn_last_seen">शेवटचे पाहिले</string>
+    <string name="conn_online">ऑनलाइन</string>
+    <string name="conn_offline">ऑफलाइन</string>
+    <string name="conn_connected">कनेक्टेड</string>
+    <string name="conn_disconnected">डिस्कनेक्टेड</string>
+
+
+    <!-- Connection & Permissions -->
+    <string name="status_connecting">कनेक्ट होत आहे…</string>
+    <string name="btn_disconnect">डिस्कनेक्ट करा</string>
+    <string name="btn_retry">पुन्हा प्रयत्न करा</string>
+    <string name="btn_switch">बदला</string>
+    <string name="btn_pair">पेअर करा</string>
+    <string name="btn_view_emergency_details">आपत्कालीन तपशील पहा</string>
+
+    <!-- Telemetry & Device Types -->
+    <string name="device_phone">फोन</string>
+    <string name="device_battery">बॅटरी</string>
+    <string name="device_smart_cane">स्मार्ट काठी</string>
+    <string name="device_gps">जीपीएस</string>
+
+    <!-- Emergency SOS Activity -->
+    <string name="sos_alert_title">आपत्कालीन संकट इशारा (SOS Alert)</string>
+    <string name="sos_telemetry_gps">जीपीएस स्थान</string>
+    <string name="sos_telemetry_battery">डिव्हाइस बॅटरी</string>
+    <string name="sos_telemetry_tof">स्मार्ट काठी अंतर (ToF)</string>
+    <string name="sos_telemetry_trigger">इशारा स्रोत</string>
+    <string name="sos_resolve_safe">मी सुरक्षित आहे (SOS बंद करा)</string>
+    <string name="sos_cancel_alarm">रद्द करा / खोटा अलार्म</string>
+    <string name="sos_start_emergency">आपत्कालीन SOS सुरू करा</string>
+    <string name="sos_return_nav">नेव्हिगेशनवर परत जा</string>
+
+    <!-- Live Location -->
+    <string name="location_coordinates">निर्देशांक (Coordinates)</string>
+    <string name="location_accuracy">जीपीएस अचूकता</string>
+    <string name="location_last_updated">शेवटचे अपडेट</string>
+
+    <!-- Settings Dialogs & Guardian -->
+    <string name="hands_free_dialog_title">हँड्स-फ्री वेक वर्ड</string>
+    <string name="hands_free_dialog_msg1">दृष्टीला \"Hey Drishti\" ओळखण्यासाठी सतत मायक्रोफोन ऍक्सेसची आवश्यकता आहे.</string>
+    <string name="hands_free_dialog_msg2">हँड्स-फ्री डिटेक्शन सुरू असताना Android मायक्रोफोन गोपनीयता निर्देशक दर्शवू शकते.</string>
+    <string name="btn_enable_hands_free">हँड्स-फ्री सक्षम करा</string>
+    <string name="btn_keep_on_demand">ऑन-डिमांडच ठेवा</string>
+    <string name="title_manage_guardian_pairing">पालक पेअरिंग आणि संमती व्यवस्थापित करा</string>
+
+</resources>

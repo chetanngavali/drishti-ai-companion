@@ -1,0 +1,10 @@
+{
+  "name": "Drishti Accessibility App",
+  "description": "Accessible mobility, government schemes, empathetic voice companion, and voice schedule assistant for visually impaired users.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

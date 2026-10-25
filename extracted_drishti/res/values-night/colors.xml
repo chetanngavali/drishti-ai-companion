@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Drishti Native Assistant Theme (Dark Mode) -->
+    <color name="assistant_scrim">#73000000</color>
+    <color name="assistant_sheet_bg">#FF1E293B</color>
+    <color name="assistant_sheet_stroke">#FF334155</color>
+    <color name="assistant_drag_handle">#FF64748B</color>
+    <color name="assistant_primary_text">#FFF8FAFC</color>
+    <color name="assistant_secondary_text">#FF94A3B8</color>
+    <color name="assistant_accent">#FF60A5FA</color>
+    <color name="assistant_accent_soft">#FF1E3A8A</color>
+    <color name="assistant_badge_bg">#FF334155</color>
+    <color name="assistant_card_subtle_bg">#FF0F172A</color>
+    <color name="assistant_suggestion_bg">#FF0F172A</color>
+    <color name="assistant_suggestion_stroke">#FF475569</color>
+    <color name="assistant_suggestion_text">#FFE2E8F0</color>
+    <color name="assistant_response_bg">#FF064E3B</color>
+    <color name="assistant_response_stroke">#FF059669</color>
+    <color name="assistant_response_text">#FF6EE7B7</color>
+    <color name="assistant_cancel_bg">#FF334155</color>
+    <color name="assistant_cancel_stroke">#FF475569</color>
+    <color name="assistant_cancel_text">#FFF1F5F9</color>
+    <color name="assistant_divider">#FF334155</color>
+</resources>
